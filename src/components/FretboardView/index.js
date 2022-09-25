@@ -29,64 +29,45 @@ export default function FretboardView() {
     he3: false,
     he4: false,
   });
+  const [pentatonicOutline, setPentatonicOutline] = useState("p1");
 
   const handleChordChoice = (pick) => {
+    let output = {
+      e1: false,
+      e2: false,
+      e3: false,
+      e4: false,
+      a1: false,
+      a2: false,
+      a3: false,
+      a4: false,
+      d1: false,
+      d2: false,
+      d3: false,
+      d4: false,
+      g1: false,
+      g2: false,
+      g3: false,
+      g4: false,
+      b1: false,
+      b2: false,
+      b3: false,
+      b4: false,
+      he1: false,
+      he2: false,
+      he3: false,
+      he4: false,
+    };
+    // set pentatonic outline
+    if (pentatonicOutline === "p1") {
+      output.e4 = "pentatonic-note";
+    }
+
     if (pick === "M1") {
-      setChordState({
-        e1: false,
-        e2: false,
-        e3: false,
-        e4: true,
-        a1: false,
-        a2: false,
-        a3: true,
-        a4: false,
-        d1: true,
-        d2: false,
-        d3: false,
-        d4: false,
-        g1: true,
-        g2: false,
-        g3: false,
-        g4: false,
-        b1: true,
-        b2: false,
-        b3: false,
-        b4: true,
-        he1: false,
-        he2: false,
-        he3: false,
-        he4: true,
-      });
+      output.e4 = "active-note";
     }
-    if (pick === "m2") {
-      setChordState({
-        e1: true,
-        e2: false,
-        e3: false,
-        e4: false,
-        a1: true,
-        a2: false,
-        a3: false,
-        a4: true,
-        d1: false,
-        d2: false,
-        d3: true,
-        d4: false,
-        g1: false,
-        g2: false,
-        g3: true,
-        g4: false,
-        b1: false,
-        b2: true,
-        b3: false,
-        b4: false,
-        he1: true,
-        he2: false,
-        he3: false,
-        he4: false,
-      });
-    }
+
+    setChordState(output);
   };
   return (
     <div>
@@ -98,132 +79,36 @@ export default function FretboardView() {
       </div>
       <div className="fretboard-container">
         <div className="fret fret1">
-          <div
-            className={
-              chordState.he1 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.b1 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.g1 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.d1 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.a1 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.e1 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
+          <div className={`string ${chordState.he1}`}></div>
+          <div className={`string ${chordState.b1}`}></div>
+          <div className={`string ${chordState.g1}`}></div>
+          <div className={`string ${chordState.d1}`}></div>
+          <div className={`string ${chordState.a1}`}></div>
+          <div className={`string ${chordState.e1}`}></div>
         </div>
         <div className="fret fret2">
-          <div
-            className={
-              chordState.he2 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.b2 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.g2 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.d2 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.a2 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.e2 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
+          <div className={`string ${chordState.he2}`}></div>
+          <div className={`string ${chordState.b2}`}></div>
+          <div className={`string ${chordState.g2}`}></div>
+          <div className={`string ${chordState.d2}`}></div>
+          <div className={`string ${chordState.a2}`}></div>
+          <div className={`string ${chordState.e2}`}></div>
         </div>
         <div className="fret fret3">
-          <div
-            className={
-              chordState.he3 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.b3 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.g3 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.d3 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.a3 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.e3 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
+          <div className={`string ${chordState.he3}`}></div>
+          <div className={`string ${chordState.b3}`}></div>
+          <div className={`string ${chordState.g3}`}></div>
+          <div className={`string ${chordState.d3}`}></div>
+          <div className={`string ${chordState.a3}`}></div>
+          <div className={`string ${chordState.e3}`}></div>
         </div>
         <div className="fret fret4">
-          <div
-            className={
-              chordState.he4 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.b4 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.g4 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.d4 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.a4 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
-          <div
-            className={
-              chordState.e4 ? "string active-note" : "string inactive-note"
-            }
-          ></div>
+          <div className={`string ${chordState.he4}`}></div>
+          <div className={`string ${chordState.b4}`}></div>
+          <div className={`string ${chordState.g4}`}></div>
+          <div className={`string ${chordState.d4}`}></div>
+          <div className={`string ${chordState.a4}`}></div>
+          <div className={`string ${chordState.e4}`}></div>
         </div>
       </div>
     </div>

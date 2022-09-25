@@ -2,6 +2,10 @@
     background-color: #e8e829;
 }
 
+.pentatonic-note {
+    background-color: #d6d6d6;
+}
+
 .fretboard-container {
   display: flex;
   justify-content: center;
