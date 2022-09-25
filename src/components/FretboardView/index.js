@@ -61,10 +61,36 @@ export default function FretboardView() {
     // set pentatonic outline
     if (pentatonicOutline === "p1") {
       output.e4 = "pentatonic-note";
+      output.e1 = "pentatonic-note";
+      output.a1 = "pentatonic-note";
+      output.a3 = "pentatonic-note";
+      output.d1 = "pentatonic-note";
+      output.d3 = "pentatonic-note";
+      output.g1 = "pentatonic-note";
+      output.g3 = "pentatonic-note";
+      output.b1 = "pentatonic-note";
+      output.b4 = "pentatonic-note";
+      output.he1 = "pentatonic-note";
+      output.he4 = "pentatonic-note";
     }
 
     if (pick === "M1") {
+      output.he4 = "active-note";
+      output.b4 = "active-note";
+      output.b1 = "active-note";
+      output.g1 = "active-note";
+      output.d1 = "active-note";
+      output.a3 = "active-note";
       output.e4 = "active-note";
+    }
+    if (pick === "m2") {
+      output.he1 = "active-note";
+      output.b2 = "active-note";
+      output.g3 = "active-note";
+      output.d3 = "active-note";
+      output.a1 = "active-note";
+      output.a4 = "active-note";
+      output.e1 = "active-note";
     }
 
     setChordState(output);
