@@ -1,3 +1,40 @@
-.fb-container {
-  color: black;
-}/*# sourceMappingURL=FretboardView.css.map */
+.fretboard-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fretboard-container .fret {
+  border: 1px solid black;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.fretboard-container .string {
+  border: 1px solid black;
+  flex: 1;
+}
+
+.fret1 {
+  width: 150px;
+}
+
+.fret2 {
+  width: 145px;
+}
+
+.fret3 {
+  width: 140px;
+}
+
+.fret4 {
+  width: 135px;
+}
+
+.fret5 {
+  width: 130px;
+}
+
+.fret6 {
+  width: 125px;
+}
