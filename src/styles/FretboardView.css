@@ -6,6 +6,24 @@
     background-color: #d6d6d6;
 }
 
+.selection-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chord-selection-area{
+    display: flex;
+    flex-direction: column;
+    min-width: 10rem;
+}
+
+.pentatonic-selection-area{
+    display: flex;
+    flex-direction: column;
+    min-width: 10rem;
+}
+
 .fretboard-container {
   display: flex;
   justify-content: center;

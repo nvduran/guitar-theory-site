@@ -30,8 +30,10 @@ export default function FretboardView() {
     he4: false,
   });
   const [pentatonicOutline, setPentatonicOutline] = useState("p1");
+  const [pentStr, setPentStr] = useState("");
+  const [chordStr, setChordStr] = useState("");
 
-  const handleChordChoice = (pick) => {
+  const handleChoiceSubmit = (pickChord, pickPent) => {
     let output = {
       e1: false,
       e2: false,
@@ -58,8 +60,9 @@ export default function FretboardView() {
       he3: false,
       he4: false,
     };
+
     // set pentatonic outline
-    if (pentatonicOutline === "p1") {
+    if (pickPent === "p1") {
       output.e4 = "pentatonic-note";
       output.e1 = "pentatonic-note";
       output.a1 = "pentatonic-note";
@@ -74,7 +77,7 @@ export default function FretboardView() {
       output.he4 = "pentatonic-note";
     }
 
-    if (pick === "M1") {
+    if (pickChord === "M1") {
       output.he4 = "active-note";
       output.b4 = "active-note";
       output.b1 = "active-note";
@@ -83,7 +86,7 @@ export default function FretboardView() {
       output.a3 = "active-note";
       output.e4 = "active-note";
     }
-    if (pick === "m2") {
+    if (pickChord === "m2") {
       output.he1 = "active-note";
       output.b2 = "active-note";
       output.g3 = "active-note";
@@ -92,17 +95,19 @@ export default function FretboardView() {
       output.a4 = "active-note";
       output.e1 = "active-note";
     }
+    if (pickChord === "m3") {
+      output.e3 = "active-note";
+      output.a3 = "active-note";
+      output.d1 = "active-note";
+      output.b1 = "active-note";
+      output.b4 = "active-note";
+      output.he3 = "active-note";
+    }
 
     setChordState(output);
   };
   return (
     <div>
-      <div className="chord-picker" onClick={() => handleChordChoice("M1")}>
-        Major 1
-      </div>
-      <div className="chord-picker" onClick={() => handleChordChoice("m2")}>
-        minor 2
-      </div>
       <div className="fretboard-container">
         <div className="fret fret1">
           <div className={`string ${chordState.he1}`}></div>
@@ -136,6 +141,30 @@ export default function FretboardView() {
           <div className={`string ${chordState.a4}`}></div>
           <div className={`string ${chordState.e4}`}></div>
         </div>
+      </div>
+      <div className="selection-div">
+        <div className="chord-selection-area">
+          <div className="chord-picker" onClick={() => setChordStr("M1")}>
+            Major 1
+          </div>
+          <div className="chord-picker" onClick={() => setChordStr("m2")}>
+            minor 2
+          </div>
+          <div className="chord-picker" onClick={() => setChordStr("m3")}>
+            minor 3
+          </div>
+        </div>
+        <div className="pentatonic-selection-area">
+          <div className="pentatonic-picker" onClick={() => setPentStr("p1")}>
+            Pentatonic 1
+          </div>
+        </div>
+      </div>
+      <div
+        className="submit-button"
+        onClick={() => handleChoiceSubmit(chordStr, pentStr)}
+      >
+        submit
       </div>
     </div>
   );
