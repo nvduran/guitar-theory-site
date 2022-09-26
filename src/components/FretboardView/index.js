@@ -144,18 +144,32 @@ export default function FretboardView() {
       </div>
       <div className="selection-div">
         <div className="chord-selection-area">
-          <div className="chord-picker" onClick={() => setChordStr("M1")}>
+          <div
+            className={chordStr === "M1" ? "chord-picker-sel" : "chord-picker"}
+            onClick={() => setChordStr("M1")}
+          >
             Major 1
           </div>
-          <div className="chord-picker" onClick={() => setChordStr("m2")}>
+          <div
+            className={chordStr === "m2" ? "chord-picker-sel" : "chord-picker"}
+            onClick={() => setChordStr("m2")}
+          >
             minor 2
           </div>
-          <div className="chord-picker" onClick={() => setChordStr("m3")}>
+          <div
+            className={chordStr === "m3" ? "chord-picker-sel" : "chord-picker"}
+            onClick={() => setChordStr("m3")}
+          >
             minor 3
           </div>
         </div>
         <div className="pentatonic-selection-area">
-          <div className="pentatonic-picker" onClick={() => setPentStr("p1")}>
+          <div
+            className={
+              pentStr === "p1" ? "pentatonic-picker-sel" : "pentatonic-picker"
+            }
+            onClick={() => setPentStr("p1")}
+          >
             Pentatonic 1
           </div>
         </div>
