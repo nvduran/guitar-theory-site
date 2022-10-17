@@ -30,8 +30,9 @@ export default function FretboardView() {
     he4: false,
   });
   const [pentatonicOutline, setPentatonicOutline] = useState("p1");
-  const [pentStr, setPentStr] = useState("");
-  const [chordStr, setChordStr] = useState("");
+  const [keySelect, setKeySelect] = useState("");
+  const [pentStr, setPentStr] = useState("p1");
+  const [chordStr, setChordStr] = useState("M1");
 
   const handleChoiceSubmit = (pickChord, pickPent) => {
     let output = {
@@ -106,6 +107,17 @@ export default function FretboardView() {
 
     setChordState(output);
   };
+
+  // handle key selection and setKeySelect
+  const handleKeyChoiceChange = (event) => {
+    setChordStr(event.target.value);
+  };
+
+  // handle pentatonic selection and setPentStr
+  const handlePentChoiceChange = (event) => {
+    setPentStr(event.target.value);
+  };
+
   return (
     <div>
       <div className="fretboard-container">
@@ -143,42 +155,26 @@ export default function FretboardView() {
         </div>
       </div>
       <div className="selection-div">
-        <div className="chord-selection-area">
-          <div
-            className={chordStr === "M1" ? "chord-picker-sel" : "chord-picker"}
-            onClick={() => setChordStr("M1")}
-          >
-            Major 1
-          </div>
-          <div
-            className={chordStr === "m2" ? "chord-picker-sel" : "chord-picker"}
-            onClick={() => setChordStr("m2")}
-          >
-            minor 2
-          </div>
-          <div
-            className={chordStr === "m3" ? "chord-picker-sel" : "chord-picker"}
-            onClick={() => setChordStr("m3")}
-          >
-            minor 3
-          </div>
+        <div className="key-choice-dropdown-div">
+          <select value={chordStr} onChange={handleKeyChoiceChange}>
+            <option value="M1">Major 1</option>
+            <option value="m2">minor 2</option>
+            <option value="m3">minor 3</option>
+          </select>
         </div>
-        <div className="pentatonic-selection-area">
-          <div
-            className={
-              pentStr === "p1" ? "pentatonic-picker-sel" : "pentatonic-picker"
-            }
-            onClick={() => setPentStr("p1")}
-          >
-            Pentatonic 1
-          </div>
+        <div className="shape-choice-dropdown-div">
+          <select value={pentStr} onChange={handlePentChoiceChange}>
+            <option value="p1">Shape 1</option>
+          </select>
         </div>
       </div>
-      <div
-        className="submit-button"
-        onClick={() => handleChoiceSubmit(chordStr, pentStr)}
-      >
-        submit
+      <div className="submit-div">
+        <div
+          className="submit-button"
+          onClick={() => handleChoiceSubmit(chordStr, pentStr)}
+        >
+          submit
+        </div>
       </div>
     </div>
   );
