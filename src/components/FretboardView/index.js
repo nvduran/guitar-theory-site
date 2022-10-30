@@ -89,6 +89,45 @@ export default function FretboardView() {
       output.b4 = "pentatonic-note";
       output.he2 = "pentatonic-note";
       output.he4 = "pentatonic-note";
+    } else if (pickPent === "p3") {
+      output.e4 = "pentatonic-note";
+      output.e2 = "pentatonic-note";
+      output.a4 = "pentatonic-note";
+      output.a2 = "pentatonic-note";
+      output.d2 = "pentatonic-note";
+      output.d4 = "pentatonic-note";
+      output.g1 = "pentatonic-note";
+      output.g4 = "pentatonic-note";
+      output.b2 = "pentatonic-note";
+      output.b5 = "pentatonic-note";
+      output.he2 = "pentatonic-note";
+      output.he4 = "pentatonic-note";
+    } else if (pickPent === "p4") {
+      output.e4 = "pentatonic-note";
+      output.e1 = "pentatonic-note";
+      output.a4 = "pentatonic-note";
+      output.a1 = "pentatonic-note";
+      output.d1 = "pentatonic-note";
+      output.d3 = "pentatonic-note";
+      output.g1 = "pentatonic-note";
+      output.g3 = "pentatonic-note";
+      output.b2 = "pentatonic-note";
+      output.b4 = "pentatonic-note";
+      output.he1 = "pentatonic-note";
+      output.he4 = "pentatonic-note";
+    } else if (pickPent === "p5") {
+      output.e4 = "pentatonic-note";
+      output.e2 = "pentatonic-note";
+      output.a4 = "pentatonic-note";
+      output.a2 = "pentatonic-note";
+      output.d1 = "pentatonic-note";
+      output.d4 = "pentatonic-note";
+      output.g1 = "pentatonic-note";
+      output.g4 = "pentatonic-note";
+      output.b2 = "pentatonic-note";
+      output.b4 = "pentatonic-note";
+      output.he2 = "pentatonic-note";
+      output.he4 = "pentatonic-note";
     }
 
     if (pickChord === "M1" && pickPent === "p1") {
@@ -117,6 +156,41 @@ export default function FretboardView() {
       output.b4 = "active-note";
       output.he3 = "active-note";
     }
+    if (pickChord === "M4" && pickPent === "p1") {
+      output.he1 = "active-note";
+      output.he4 = "active-note";
+      output.b2 = "active-note";
+      output.g1 = "active-note";
+      output.d3 = "active-note";
+      output.a4 = "active-note";
+      output.e4 = "active-note";
+    }
+    if (pickChord === "M5" && pickPent === "p1") {
+      output.he3 = "active-note";
+      output.b4 = "active-note";
+      output.g3 = "active-note";
+      output.d1 = "active-note";
+      output.a1 = "active-note";
+      output.e3 = "active-note";
+    }
+    if (pickChord === "m6" && pickPent === "p1") {
+      output.he1 = "active-note";
+      output.he4 = "active-note";
+      output.b1 = "active-note";
+      output.g1 = "active-note";
+      output.d3 = "active-note";
+      output.a3 = "active-note";
+      output.e4 = "active-note";
+      output.e1 = "active-note";
+    }
+    if (pickChord === "d7" && pickPent === "p1") {
+      output.he3 = "active-note";
+      output.b2 = "active-note";
+      output.g3 = "active-note";
+      output.a4 = "active-note";
+      output.a1 = "active-note";
+      output.e3 = "active-note";
+    }
     if (pickChord === "M1" && pickPent === "p2") {
       output.he1 = "active-note";
       output.b1 = "active-note";
@@ -144,7 +218,35 @@ export default function FretboardView() {
       output.a1 = "active-note";
       output.e1 = "active-note";
     }
-
+    if (pickChord === "M4" && pickPent === "p2") {
+      output.he2 = "active-note";
+      output.b4 = "active-note";
+      output.g4 = "active-note";
+      output.d4 = "active-note";
+      output.d1 = "active-note";
+      output.a2 = "active-note";
+      output.e2 = "active-note";
+    }
+    if (pickChord === "M5" && pickPent === "p2") {
+      output.he1 = "active-note";
+      output.he4 = "active-note";
+      output.b2 = "active-note";
+      output.g1 = "active-note";
+      output.d3 = "active-note";
+      output.a4 = "active-note";
+      output.e4 = "active-note";
+      output.e1 = "active-note";
+    }
+    if (pickChord === "M5" && pickPent === "p2") {
+      output.he1 = "active-note";
+      output.he4 = "active-note";
+      output.b2 = "active-note";
+      output.g1 = "active-note";
+      output.d3 = "active-note";
+      output.a4 = "active-note";
+      output.e4 = "active-note";
+      output.e1 = "active-note";
+    }
     setChordState(output);
   };
 
@@ -200,12 +302,19 @@ export default function FretboardView() {
             <option value="M1">Major 1</option>
             <option value="m2">minor 2</option>
             <option value="m3">minor 3</option>
+            <option value="M4">Major 4</option>
+            <option value="M5">Major 5</option>
+            <option value="m6">minor 6</option>
+            <option value="d7">dim 7</option>
           </select>
         </div>
         <div className="shape-choice-dropdown-div">
           <select value={pentStr} onChange={handlePentChoiceChange}>
             <option value="p1">Shape 1</option>
             <option value="p2">Shape 2</option>
+            <option value="p3">Shape 3</option>
+            <option value="p4">Shape 4</option>
+            <option value="p5">Shape 5</option>
           </select>
         </div>
       </div>
