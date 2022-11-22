@@ -29,8 +29,6 @@ export default function FretboardView() {
     he3: false,
     he4: false,
   });
-  const [pentatonicOutline, setPentatonicOutline] = useState("p1");
-  const [keySelect, setKeySelect] = useState("");
   const [pentStr, setPentStr] = useState("p1");
   const [chordStr, setChordStr] = useState("M1");
 

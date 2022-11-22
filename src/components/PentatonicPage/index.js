@@ -7,10 +7,14 @@ export default function PentatonicPage() {
 
   //handle adding a fretboard
   const handleAddFretboard = () => {
-    console.log("Add fretboard");
     //add one to fretboardCount
     setFretboardCount(fretboardCount + 1);
-    console.log("fretboardCount: " + fretboardCount);
+  };
+
+  //handle removing a fretboard
+  const handleRemoveFretboard = () => {
+    //remove one from fretboardCount
+    setFretboardCount(fretboardCount - 1);
   };
 
   // return one FretboardView component for each fretboardCount
@@ -18,12 +22,20 @@ export default function PentatonicPage() {
     <div>
       {Array.from(Array(fretboardCount).keys()).map((i) => (
         <div key={i}>
-          <FretboardView key={i} />
-          <button className="add-fretboard-button" onClick={handleAddFretboard}>
-            +
-          </button>
+          <div>
+            <FretboardView key={i} />
+            {/* <button
+              className="remove-fretboard-button"
+              onClick={handleRemoveFretboard}
+            >
+              x
+            </button> */}
+          </div>
         </div>
       ))}
+      <button className="add-fretboard-button" onClick={handleAddFretboard}>
+        +
+      </button>
     </div>
   );
 }
