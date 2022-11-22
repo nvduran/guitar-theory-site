@@ -1,0 +1,12 @@
+.add-fretboard-button {
+  cursor: pointer;
+  background-color: #dcdcdc;
+  color: rgb(158, 158, 158);
+  justify-content: center;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  border: 0px;
+  margin-top: 3rem;
+  padding-bottom: 4px;
+}/*# sourceMappingURL=PentatonicPage.css.map */

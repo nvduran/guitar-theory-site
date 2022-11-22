@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import FretboardView from "./components/FretboardView";
+import PentatonicPage from "./components/PentatonicPage";
 
 function App() {
   return (
     <div className="App">
-      <FretboardView />
+      <PentatonicPage />
+      <div></div>
     </div>
   );
 }

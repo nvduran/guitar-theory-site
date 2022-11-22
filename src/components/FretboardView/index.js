@@ -464,7 +464,7 @@ export default function FretboardView() {
   };
 
   return (
-    <div>
+    <div className="big-container">
       <div className="fretboard-container">
         <div className="fret fret1">
           <div className={`string ${chordState.he1}`}></div>
@@ -520,13 +520,13 @@ export default function FretboardView() {
             <option value="p5">Shape 5</option>
           </select>
         </div>
-      </div>
-      <div className="submit-div">
-        <div
-          className="submit-button"
-          onClick={() => handleChoiceSubmit(chordStr, pentStr)}
-        >
-          submit
+        <div className="submit-div">
+          <div
+            className="submit-button"
+            onClick={() => handleChoiceSubmit(chordStr, pentStr)}
+          >
+            submit
+          </div>
         </div>
       </div>
     </div>
