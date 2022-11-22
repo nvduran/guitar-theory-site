@@ -24,18 +24,21 @@ export default function PentatonicPage() {
         <div key={i}>
           <div>
             <FretboardView key={i} />
-            {/* <button
-              className="remove-fretboard-button"
-              onClick={handleRemoveFretboard}
-            >
-              x
-            </button> */}
           </div>
         </div>
       ))}
       <button className="add-fretboard-button" onClick={handleAddFretboard}>
         +
       </button>
+      {/* only show the remove button if there is more than one fretboard */}
+      {fretboardCount > 1 && (
+        <button
+          className="remove-fretboard-button"
+          onClick={handleRemoveFretboard}
+        >
+          -
+        </button>
+      )}
     </div>
   );
 }
