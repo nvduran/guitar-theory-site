@@ -32,13 +32,13 @@ body {
 
 .submit-button {
   cursor: pointer;
-  background-color: #7d7d7d;
-  color: white;
+  background-color: #ededed;
+  color: #424242;
   justify-content: center;
   width: 5rem;
   height: 2rem;
   border-radius: 0.2rem;
-  line-height: 2rem;
+  margin-bottom: 10px;
 }
 
 .chord-picker-sel {
@@ -63,7 +63,7 @@ body {
 }
 
 .fretboard-container .fret {
-  border: 1px solid black;
+  border: 1px solid #424242;
   height: 12rem;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ body {
 }
 
 .fretboard-container .string {
-  border: 1px solid black;
+  border: 1px solid #5a5a5a;
   flex: 1;
 }
 
