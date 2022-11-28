@@ -21,3 +21,32 @@
     border: 0px;
     margin-left: 2rem
 }
+
+.advanced-settings-button-div {
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.frets-selection-in-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.frets-text-in-modal{
+    font-size: large;
+    margin-left: 2rem;
+}
+
+.button-group-frets-in-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+button {
+    min-width: 5rem;
+}

@@ -3,6 +3,7 @@ import FretboardView from "../FretboardView";
 import "../../styles/PentatonicPage.css";
 import Button from "react-bootstrap/Button";
 import ToggleButton from "react-bootstrap/ToggleButton";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Modal from "react-bootstrap/Modal";
 
 export default function PentatonicPage() {
@@ -33,39 +34,45 @@ export default function PentatonicPage() {
   // return one FretboardView component for each fretboardCount
   return (
     <div>
-      <Button variant="primary" onClick={handleShowModal}>
-        Advanced Settings
-      </Button>
+      <div className="advanced-settings-button-div">
+        <Button variant="outline-secondary" size="sm" onClick={handleShowModal}>
+          Settings
+        </Button>
+      </div>
 
-      <Modal show={showModal} onHide={handleCloseModal}>
+      <Modal show={showModal} onHide={handleCloseModal} size="sm">
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Settings</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div>
-            Frets:
-            <ToggleButton
-              variant={
-                advancedSettings.frets === 4
-                  ? "outline-success"
-                  : "outline-danger"
-              }
-              onClick={() => {
-                setAdvancedSettings({ frets: 4 });
-              }}
-            >
-              Four
-            </ToggleButton>
-            <ToggleButton
-              variant={
-                advancedSettings.frets === 6
-                  ? "outline-success"
-                  : "outline-danger"
-              }
-              onClick={() => setAdvancedSettings({ frets: 6 })}
-            >
-              Six
-            </ToggleButton>
+          <div className="frets-selection-in-modal">
+            <div className="frets-text-in-modal">Frets:</div>
+            <div className="button-group-frets-in-modal">
+              <ButtonGroup>
+                <ToggleButton
+                  variant={
+                    advancedSettings.frets === 4
+                      ? "secondary"
+                      : "outline-secondary"
+                  }
+                  onClick={() => {
+                    setAdvancedSettings({ frets: 4 });
+                  }}
+                >
+                  Four
+                </ToggleButton>
+                <ToggleButton
+                  variant={
+                    advancedSettings.frets === 6
+                      ? "secondary"
+                      : "outline-secondary"
+                  }
+                  onClick={() => setAdvancedSettings({ frets: 6 })}
+                >
+                  Six
+                </ToggleButton>
+              </ButtonGroup>
+            </div>
           </div>
         </Modal.Body>
         <Modal.Footer>
