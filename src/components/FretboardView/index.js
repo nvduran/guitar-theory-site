@@ -2,7 +2,8 @@ import React from "react";
 import "../../styles/FretboardView.css";
 import { useState } from "react";
 
-export default function FretboardView() {
+export default function FretboardView({ advancedSettings }) {
+  const [fretCount, setFretCount] = useState(advancedSettings.frets);
   const [chordState, setChordState] = useState({
     e1: false,
     e2: false,
@@ -464,6 +465,16 @@ export default function FretboardView() {
   return (
     <div className="big-container">
       <div className="fretboard-container">
+        {fretCount === 6 ? (
+          <div className="fret fret0">
+            <div className={`string ${chordState.he0}`}></div>
+            <div className={`string ${chordState.b0}`}></div>
+            <div className={`string ${chordState.g0}`}></div>
+            <div className={`string ${chordState.d0}`}></div>
+            <div className={`string ${chordState.a0}`}></div>
+            <div className={`string ${chordState.e0}`}></div>
+          </div>
+        ) : null}
         <div className="fret fret1">
           <div className={`string ${chordState.he1}`}></div>
           <div className={`string ${chordState.b1}`}></div>
@@ -496,6 +507,16 @@ export default function FretboardView() {
           <div className={`string ${chordState.a4}`}></div>
           <div className={`string ${chordState.e4}`}></div>
         </div>
+        {fretCount === 6 ? (
+          <div className="fret fret5">
+            <div className={`string ${chordState.he5}`}></div>
+            <div className={`string ${chordState.b5}`}></div>
+            <div className={`string ${chordState.g5}`}></div>
+            <div className={`string ${chordState.d5}`}></div>
+            <div className={`string ${chordState.a5}`}></div>
+            <div className={`string ${chordState.e5}`}></div>
+          </div>
+        ) : null}
       </div>
       <div className="selection-div">
         <div className="key-choice-dropdown-div">
