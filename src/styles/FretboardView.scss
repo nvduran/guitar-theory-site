@@ -1,9 +1,19 @@
+@import "../variables/Variables.scss";
 body {
     background-color: #ededed;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif sans-serif;
 }
 
 .active-note {
-    background-color: #e8e829;
+    background-color: #6A7FDB;
+}
+
+.active-note-5th {
+    background-color: #6a7fdb9f;
+}
+
+.active-note-3rd {
+  background-color: #6a7fdb2b;
 }
 
 .pentatonic-note {
@@ -14,9 +24,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2rem;
-    background-color: rgb(215, 215, 215);
+    margin-top: 1rem;
+    background-color: $light-grey;
     width: 850px;
+    padding-top: 1.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .selection-div-container {
@@ -40,8 +53,8 @@ body {
 
 .submit-button{
     cursor: pointer;
-    background-color: #ededed;
-    color: #424242;
+    background-color: $light-grey;
+    color: $text-color;
     justify-content: center;
     width: 5rem;
     height: 2rem;
@@ -52,13 +65,14 @@ body {
 }
 
 .chord-picker-sel{
-    background-color: #d4d4d4;
+    background-color: $light-grey;
     cursor: pointer;
 }
 
 .pentatonic-picker-sel{
-  background-color: #d4d4d4;
+  background-color: $light-grey;
   cursor: pointer;
+
 }
 
 .pentatonic-selection-area{
@@ -73,14 +87,15 @@ body {
 }
 
 .fretboard-container .fret {
-  border: 1px solid  #424242;;
+  border: 2px solid  $light-grey;
   height: 12rem;
   display: flex;
   flex-direction: column;
+
 }
 
 .fretboard-container .string {
-  border: 1px solid #5a5a5a;;
+  border: 2px solid $background-color;
   flex: 1;
 }
 
@@ -109,8 +124,8 @@ body {
 }
 
 .key-choice-dropdown-div select {
-  background-color: #ededed;
-  color: #424242;
+  background-color: $light-grey;
+  color: $text-color;
   border-radius: 0%;
   border-bottom: 0px solid #424242;
   border-left: 0px solid #424242;
@@ -121,8 +136,8 @@ body {
 }
 
 .shape-choice-dropdown-div select {
-  background-color: #ededed;
-  color: #424242;
+  background-color: $light-grey;
+  color: $text-color;
   border-radius: 0%;
   border-bottom: 0px solid #424242;
   border-left: 0px solid #424242;

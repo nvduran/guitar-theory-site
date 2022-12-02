@@ -131,11 +131,11 @@ export default function FretboardView({ advancedSettings }) {
 
     if (pickChord === "M1" && pickPent === "p1") {
       output.he4 = "active-note";
-      output.b4 = "active-note";
-      output.b1 = "active-note";
+      output.b4 = "active-note-5th";
+      output.b1 = "active-note-3rd";
       output.g1 = "active-note";
-      output.d1 = "active-note";
-      output.a3 = "active-note";
+      output.d1 = "active-note-5th";
+      output.a3 = "active-note-3rd";
       output.e4 = "active-note";
     }
     if (pickChord === "m2" && pickPent === "p1") {
