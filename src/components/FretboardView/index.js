@@ -464,6 +464,38 @@ export default function FretboardView({ advancedSettings }) {
 
   return (
     <div className="big-container">
+      <div className="selection-div-container">
+        <div className="selection-div">
+          <div className="key-choice-dropdown-div">
+            <select value={chordStr} onChange={handleKeyChoiceChange}>
+              <option value="M1">Major 1</option>
+              <option value="m2">minor 2</option>
+              <option value="m3">minor 3</option>
+              <option value="M4">Major 4</option>
+              <option value="M5">Major 5</option>
+              <option value="m6">minor 6</option>
+              <option value="d7">dim 7</option>
+            </select>
+          </div>
+          <div className="shape-choice-dropdown-div">
+            <select value={pentStr} onChange={handlePentChoiceChange}>
+              <option value="p1">Shape 1</option>
+              <option value="p2">Shape 2</option>
+              <option value="p3">Shape 3</option>
+              <option value="p4">Shape 4</option>
+              <option value="p5">Shape 5</option>
+            </select>
+          </div>
+          <div className="submit-div">
+            <div
+              className="submit-button"
+              onClick={() => handleChoiceSubmit(chordStr, pentStr)}
+            >
+              submit
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="fretboard-container">
         {fretCount === 6 ? (
           <div className="fret fret0">
@@ -517,36 +549,6 @@ export default function FretboardView({ advancedSettings }) {
             <div className={`string ${chordState.e5}`}></div>
           </div>
         ) : null}
-      </div>
-      <div className="selection-div">
-        <div className="key-choice-dropdown-div">
-          <select value={chordStr} onChange={handleKeyChoiceChange}>
-            <option value="M1">Major 1</option>
-            <option value="m2">minor 2</option>
-            <option value="m3">minor 3</option>
-            <option value="M4">Major 4</option>
-            <option value="M5">Major 5</option>
-            <option value="m6">minor 6</option>
-            <option value="d7">dim 7</option>
-          </select>
-        </div>
-        <div className="shape-choice-dropdown-div">
-          <select value={pentStr} onChange={handlePentChoiceChange}>
-            <option value="p1">Shape 1</option>
-            <option value="p2">Shape 2</option>
-            <option value="p3">Shape 3</option>
-            <option value="p4">Shape 4</option>
-            <option value="p5">Shape 5</option>
-          </select>
-        </div>
-        <div className="submit-div">
-          <div
-            className="submit-button"
-            onClick={() => handleChoiceSubmit(chordStr, pentStr)}
-          >
-            submit
-          </div>
-        </div>
       </div>
     </div>
   );
