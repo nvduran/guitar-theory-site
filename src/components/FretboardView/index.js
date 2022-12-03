@@ -465,7 +465,7 @@ export default function FretboardView({ advancedSettings }) {
   return (
     <div className="big-container">
       <div className="selection-div-container">
-        <div className="selection-div">
+        <div className={fretCount === 6 ? "selection-div" : "selection-div-4f"}>
           <div className="key-choice-dropdown-div">
             <select value={chordStr} onChange={handleKeyChoiceChange}>
               <option value="M1">Major 1</option>
