@@ -20,7 +20,7 @@ export default function NavBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link href="/PrivacyPolicy">Privacy Policy</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
