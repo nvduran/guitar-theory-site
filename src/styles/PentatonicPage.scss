@@ -28,7 +28,7 @@
     justify-content: right;
     margin-top: 1rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2em;
 }
 
 .frets-selection-in-modal{
@@ -62,44 +62,57 @@ button {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     line-height: 1rem;
-  }
+}
   
-  .footer-big-div{
+.footer-big-div{
     display: flex;
     flex-direction: row;
     justify-content: center
-  }
+}
   
-  .footer-little-div {
+.footer-little-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
+    background-color: $light-grey;
+    min-height: 2.0rem;
+    align-items: center;
+    border-radius: 3px;
+}
 
 
-  .active-note-key-example {
+.active-note-key-example {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: #6A7FDB;
-    font-size: small;
+    font-size:x-small;
     width: 4rem;
     height: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
   
-  .active-note-5th-key-example {
+.active-note-5th-key-example {
     background-color: #6a7fdb9f;
-    font-size: small;
+    font-size: x-small;
     width: 4rem;
     height: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
   
-  .active-note-3rd-key-example {
-    background-color: #6a7fdb2b;
-    font-size: small;
+.active-note-3rd-key-example {
+    background-color: #6a7fdb4a;
+    font-size: x-small;
     width: 4rem;
     height: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.settings-and-key-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

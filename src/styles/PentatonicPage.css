@@ -27,7 +27,7 @@
   justify-content: right;
   margin-top: 1rem;
   margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2em;
 }
 
 .frets-selection-in-modal {
@@ -73,31 +73,44 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #e6e6e6;
+  min-height: 2rem;
+  align-items: center;
+  border-radius: 3px;
 }
 
 .active-note-key-example {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #6A7FDB;
-  font-size: small;
+  font-size: x-small;
   width: 4rem;
   height: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .active-note-5th-key-example {
   background-color: rgba(106, 127, 219, 0.6235294118);
-  font-size: small;
+  font-size: x-small;
   width: 4rem;
   height: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .active-note-3rd-key-example {
-  background-color: rgba(106, 127, 219, 0.168627451);
-  font-size: small;
+  background-color: rgba(106, 127, 219, 0.2901960784);
+  font-size: x-small;
   width: 4rem;
   height: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.settings-and-key-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }/*# sourceMappingURL=PentatonicPage.css.map */

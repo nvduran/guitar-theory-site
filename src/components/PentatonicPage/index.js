@@ -34,10 +34,17 @@ export default function PentatonicPage() {
   // return one FretboardView component for each fretboardCount
   return (
     <div>
-      <div className="advanced-settings-button-div">
-        <Button variant="outline-secondary" size="sm" onClick={handleShowModal}>
-          Settings
-        </Button>
+      <div className="settings-and-key-div">
+        <div></div>
+        <div className="advanced-settings-button-div">
+          <Button
+            variant="outline-secondary"
+            size="sm"
+            onClick={handleShowModal}
+          >
+            Options
+          </Button>
+        </div>
       </div>
 
       <Modal show={showModal} onHide={handleCloseModal} size="sm">
@@ -99,8 +106,8 @@ export default function PentatonicPage() {
           <div className="footer-big-div">
             <div className="footer-little-div">
               <div className="active-note-key-example">Root</div>
-              <div className="active-note-3rd-key-example">3rd</div>
-              <div className="active-note-5th-key-example">5th</div>
+              <div className="active-note-3rd-key-example">Third</div>
+              <div className="active-note-5th-key-example">Fifth</div>
             </div>
           </div>
         </div>
