@@ -93,6 +93,19 @@ export default function PentatonicPage() {
             </div>
           </div>
         ))}
+
+        {/* FRETBOARD COLOR KEY */}
+        <div className="fretboard-view-footer">
+          <div className="footer-big-div">
+            <div className="footer-little-div">
+              <div className="active-note-key-example">Root</div>
+              <div className="active-note-3rd-key-example">3rd</div>
+              <div className="active-note-5th-key-example">5th</div>
+            </div>
+          </div>
+        </div>
+
+        {/* add button  */}
         <button className="add-fretboard-button" onClick={handleAddFretboard}>
           +
         </button>

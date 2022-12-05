@@ -52,3 +52,54 @@
 button {
     min-width: 5rem;
 }
+
+.fretboard-view-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 1rem;
+  }
+  
+  .footer-big-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+  
+  .footer-little-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .active-note-key-example {
+    background-color: #6A7FDB;
+    font-size: small;
+    width: 4rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .active-note-5th-key-example {
+    background-color: #6a7fdb9f;
+    font-size: small;
+    width: 4rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .active-note-3rd-key-example {
+    background-color: #6a7fdb2b;
+    font-size: small;
+    width: 4rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
