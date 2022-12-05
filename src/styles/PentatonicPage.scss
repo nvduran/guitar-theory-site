@@ -1,7 +1,8 @@
+@import "../variables/Variables.scss";
 .add-fretboard-button{
     cursor: pointer;
-    background-color: #dcdcdc;
-    color: rgb(158, 158, 158);
+    background-color: $light-grey;
+    color: $text-color;
     justify-content: center;
     width: 10rem;
     height: 2rem;
@@ -13,8 +14,8 @@
 
 .remove-fretboard-button {
     cursor: pointer;
-    background-color: #dcdcdc;
-    color: rgb(158, 158, 158);
+    background-color: $light-grey;
+    color: $text-color;
     width: 5rem;
     height: 2rem;
     border-radius: 0.2rem;
