@@ -38,6 +38,7 @@ export default function PentatonicPage() {
         <div></div>
         <div className="advanced-settings-button-div">
           <Button
+            className="advanced-settings-button"
             variant="outline-secondary"
             size="sm"
             onClick={handleShowModal}

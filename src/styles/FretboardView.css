@@ -75,6 +75,10 @@ body {
   margin-bottom: 10px;
 }
 
+.submit-button:hover {
+  color: #6A7FDB;
+}
+
 .chord-picker-sel {
   background-color: #e6e6e6;
   cursor: pointer;

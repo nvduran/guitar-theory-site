@@ -30,6 +30,11 @@
   margin-bottom: 0.2em;
 }
 
+.advanced-settings-button:hover {
+  background-color: #6A7FDB;
+  color: white;
+}
+
 .frets-selection-in-modal {
   display: flex;
   flex-direction: row;

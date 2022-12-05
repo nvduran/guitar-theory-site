@@ -465,7 +465,11 @@ export default function FretboardView({ advancedSettings }) {
       <div className="selection-div-container">
         <div className={fretCount === 6 ? "selection-div" : "selection-div-4f"}>
           <div className="key-choice-dropdown-div">
-            <select value={chordStr} onChange={handleKeyChoiceChange}>
+            <select
+              value={chordStr}
+              onChange={handleKeyChoiceChange}
+              className="selector-select-class"
+            >
               <option value="M1">Major 1</option>
               <option value="m2">minor 2</option>
               <option value="m3">minor 3</option>
@@ -476,7 +480,11 @@ export default function FretboardView({ advancedSettings }) {
             </select>
           </div>
           <div className="shape-choice-dropdown-div">
-            <select value={pentStr} onChange={handlePentChoiceChange}>
+            <select
+              value={pentStr}
+              onChange={handlePentChoiceChange}
+              className="selector-select-class"
+            >
               <option value="p1">Shape 1</option>
               <option value="p2">Shape 2</option>
               <option value="p3">Shape 3</option>

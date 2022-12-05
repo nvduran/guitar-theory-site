@@ -78,6 +78,10 @@ body {
     // max-height: 1.7rem;
 }
 
+.submit-button:hover {
+    color: $brand-purple;
+}
+
 .chord-picker-sel{
     background-color: $light-grey;
     cursor: pointer;

@@ -1,7 +1,17 @@
+@import "../variables/Variables.scss";
+
 nav {
-    background-color: rgb(215, 215, 215);
+    background-color: $light-grey;
 }
 
 .nav-bs-container button {
     border: 0px ;
+}
+
+.nav-link:hover {
+    color: $brand-purple;
+}
+
+.navbar-brand:hover {
+    color: $brand-purple;
 }
