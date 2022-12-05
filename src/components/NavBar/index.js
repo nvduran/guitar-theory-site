@@ -14,12 +14,12 @@ export default function NavBar() {
         variant="light"
         className="navbar-main-div"
       >
-        <Container>
-          <Navbar.Brand href="#home">Guitar Theory</Navbar.Brand>
+        <Container className="nav-bs-container">
+          <Navbar.Brand href="/">Guitar Theory</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
+              <Nav.Link href="#features">Charts</Nav.Link>
               <Nav.Link href="/PrivacyPolicy">Privacy Policy</Nav.Link>
             </Nav>
           </Navbar.Collapse>
