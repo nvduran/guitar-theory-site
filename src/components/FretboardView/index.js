@@ -139,313 +139,311 @@ export default function FretboardView({ advancedSettings }) {
       output.e4 = "active-note";
     }
     if (pickChord === "m2" && pickPent === "p1") {
-      output.he1 = "active-note";
-      output.b2 = "active-note";
+      output.he1 = "active-note-5th";
+      output.b2 = "active-note-3rd";
       output.g3 = "active-note";
-      output.d3 = "active-note";
+      output.d3 = "active-note-5th";
       output.a1 = "active-note";
-      output.a4 = "active-note";
-      output.e1 = "active-note";
+      output.a4 = "active-note-3rd";
+      output.e1 = "active-note-5th";
     }
     if (pickChord === "m3" && pickPent === "p1") {
-      output.e3 = "active-note";
+      output.e3 = "active-note-5th";
       output.a3 = "active-note";
-      output.d1 = "active-note";
+      output.d1 = "active-note-3rd";
       output.b1 = "active-note";
-      output.b4 = "active-note";
-      output.he3 = "active-note";
+      output.b4 = "active-note-3rd";
+      output.he3 = "active-note-5th";
     }
     if (pickChord === "M4" && pickPent === "p1") {
-      output.he1 = "active-note";
-      output.he4 = "active-note";
+      output.he1 = "active-note-3rd";
+      output.he4 = "active-note-5th";
       output.b2 = "active-note";
-      output.g1 = "active-note";
-      output.d3 = "active-note";
+      output.g1 = "active-note-5th";
+      output.d3 = "active-note-3rd";
       output.a4 = "active-note";
-      output.e4 = "active-note";
+      output.e4 = "active-note-5th";
+      output.e1 = "active-note-3rd";
     }
     if (pickChord === "M5" && pickPent === "p1") {
-      output.he3 = "active-note";
+      output.he3 = "active-note-3rd";
       output.b4 = "active-note";
-      output.g3 = "active-note";
+      output.g3 = "active-note-5th";
+      output.g0 = "active-note-3rd";
       output.d1 = "active-note";
-      output.a1 = "active-note";
-      output.e3 = "active-note";
+      output.a1 = "active-note-5th";
+      output.e3 = "active-note-3rd";
     }
     if (pickChord === "m6" && pickPent === "p1") {
       output.he1 = "active-note";
-      output.he4 = "active-note";
-      output.b1 = "active-note";
-      output.g1 = "active-note";
+      output.he4 = "active-note-3rd";
+      output.b1 = "active-note-5th";
+      output.g1 = "active-note-3rd";
       output.d3 = "active-note";
-      output.a3 = "active-note";
-      output.e4 = "active-note";
+      output.a3 = "active-note-5th";
+      output.e4 = "active-note-3rd";
       output.e1 = "active-note";
     }
     if (pickChord === "d7" && pickPent === "p1") {
       output.he3 = "active-note";
-      output.b2 = "active-note";
-      output.g3 = "active-note";
-      output.a4 = "active-note";
-      output.a1 = "active-note";
+      output.b2 = "active-note-5th";
+      output.g3 = "active-note-3rd";
+      output.g0 = "active-note";
+      output.a4 = "active-note-5th";
+      output.a1 = "active-note-3rd";
       output.e3 = "active-note";
     }
     if (pickChord === "M1" && pickPent === "p2") {
-      output.he1 = "active-note";
-      output.b1 = "active-note";
-      output.g3 = "active-note";
+      output.he2 = "active-note";
+      output.b2 = "active-note-5th";
+      output.g3 = "active-note-3rd";
       output.d4 = "active-note";
-      output.a4 = "active-note";
-      output.a1 = "active-note";
+      output.a4 = "active-note-5th";
+      output.a1 = "active-note-3rd";
       output.e2 = "active-note";
     }
     if (pickChord === "m2" && pickPent === "p2") {
       output.he4 = "active-note";
-      output.b4 = "active-note";
-      output.g4 = "active-note";
+      output.b4 = "active-note-5th";
+      output.g4 = "active-note-3rd";
       output.g1 = "active-note";
-      output.d1 = "active-note";
-      output.a2 = "active-note";
+      output.d1 = "active-note-5th";
+      output.a2 = "active-note-3rd";
       output.e4 = "active-note";
     }
     if (pickChord === "m3" && pickPent === "p2") {
-      output.he1 = "active-note";
-      output.b2 = "active-note";
+      output.he1 = "active-note-5th";
+      output.b2 = "active-note-3rd";
       output.g3 = "active-note";
-      output.d3 = "active-note";
-      output.a4 = "active-note";
+      output.d3 = "active-note-5th";
+      output.a4 = "active-note-3rd";
       output.a1 = "active-note";
-      output.e1 = "active-note";
+      output.e1 = "active-note-5th";
     }
     if (pickChord === "M4" && pickPent === "p2") {
-      output.he2 = "active-note";
-      output.b4 = "active-note";
+      output.he2 = "active-note-5th";
+      output.b4 = "active-note-3rd";
       output.g4 = "active-note";
-      output.d4 = "active-note";
-      output.d1 = "active-note";
+      output.d4 = "active-note-5th";
+      output.d1 = "active-note-3rd";
       output.a2 = "active-note";
-      output.e2 = "active-note";
+      output.e2 = "active-note-5th";
     }
     if (pickChord === "M5" && pickPent === "p2") {
-      output.he1 = "active-note";
-      output.he4 = "active-note";
+      output.he4 = "active-note-5th";
+      output.he1 = "active-note-3rd";
       output.b2 = "active-note";
-      output.g1 = "active-note";
-      output.d3 = "active-note";
+      output.g1 = "active-note-5th";
+      output.d3 = "active-note-3rd";
       output.a4 = "active-note";
-      output.e4 = "active-note";
-      output.e1 = "active-note";
-    }
-    if (pickChord === "M5" && pickPent === "p2") {
-      output.he1 = "active-note";
-      output.he4 = "active-note";
-      output.b2 = "active-note";
-      output.g1 = "active-note";
-      output.d3 = "active-note";
-      output.a4 = "active-note";
-      output.e4 = "active-note";
-      output.e1 = "active-note";
+      output.e4 = "active-note=5th";
+      output.e1 = "active-note-3rd";
     }
     if (pickChord === "m6" && pickPent === "p2") {
-      output.he2 = "active-note";
+      output.he2 = "active-note-3rd";
       output.b4 = "active-note";
-      output.g3 = "active-note";
-      output.d4 = "active-note";
+      output.g3 = "active-note-5th";
+      output.d4 = "active-note-3rd";
       output.d1 = "active-note";
-      output.a1 = "active-note";
-      output.e2 = "active-note";
+      output.a1 = "active-note-5th";
+      output.e2 = "active-note-3rd";
     }
     if (pickChord === "d7" && pickPent === "p2") {
       output.he1 = "active-note";
-      output.he4 = "active-note";
-      output.g4 = "active-note";
-      output.g1 = "active-note";
+      output.he4 = "active-note-3rd";
+      output.b0 = "active-note-5th";
+      output.g4 = "active-note-5th";
+      output.g1 = "active-note-3rd";
       output.d3 = "active-note";
-      output.a2 = "active-note";
-      output.e4 = "active-note";
+      output.a2 = "active-note-5th";
+      output.e4 = "active-note-3rd";
       output.e1 = "active-note";
     }
     if (pickChord === "M1" && pickPent === "p3") {
-      output.he4 = "active-note";
+      output.he4 = "active-note-3rd";
       output.b5 = "active-note";
-      output.g1 = "active-note";
-      output.g4 = "active-note";
+      output.b0 = "active-note-5th";
+      output.g1 = "active-note-3rd";
+      output.g4 = "active-note-5th";
       output.d2 = "active-note";
-      output.a2 = "active-note";
-      output.e4 = "active-note";
+      output.a2 = "active-note-5th";
+      output.e4 = "active-note-3rd";
     }
     if (pickChord === "m2" && pickPent === "p3") {
       output.he2 = "active-note";
-      output.b2 = "active-note";
-      output.g2 = "active-note";
+      output.b2 = "active-note-5th";
+      output.g2 = "active-note-3rd";
       output.d4 = "active-note";
-      output.a4 = "active-note";
+      output.a4 = "active-note-5th";
+      output.a0 = "active-note-3rd";
       output.e2 = "active-note";
     }
     if (pickChord === "m3" && pickPent === "p3") {
       output.he4 = "active-note";
-      output.b4 = "active-note";
-      output.g4 = "active-note";
+      output.b4 = "active-note-5th";
+      output.g4 = "active-note-3rd";
       output.g1 = "active-note";
-      output.d1 = "active-note";
-      output.a2 = "active-note";
+      output.d1 = "active-note-5th";
+      output.a2 = "active-note-3rd";
       output.e4 = "active-note";
     }
     if (pickChord === "M4" && pickPent === "p3") {
-      output.b2 = "active-note";
+      output.b2 = "active-note-3rd";
       output.g2 = "active-note";
-      output.d2 = "active-note";
-      output.a4 = "active-note";
+      output.d2 = "active-note-5th";
+      output.a4 = "active-note-3rd";
+      output.e5 = "active-note";
     }
     if (pickChord === "M5" && pickPent === "p3") {
-      output.he2 = "active-note";
-      output.b4 = "active-note";
+      output.he2 = "active-note-5th";
+      output.b4 = "active-note-3rd";
       output.g4 = "active-note";
-      output.g4 = "active-note";
-      output.d1 = "active-note";
+      output.d4 = "active-note-5th";
+      output.d1 = "active-note-3rd";
       output.a2 = "active-note";
-      output.e2 = "active-note";
+      output.e2 = "active-note-5th";
     }
     if (pickChord === "m6" && pickPent === "p3") {
-      output.he4 = "active-note";
-      output.b5 = "active-note";
+      output.he4 = "active-note-5th";
+      output.b5 = "active-note-3rd";
       output.b2 = "active-note";
-      output.g1 = "active-note";
-      output.d2 = "active-note";
+      output.g1 = "active-note-5th";
+      output.d2 = "active-note-3rd";
       output.a4 = "active-note";
-      output.e4 = "active-note";
+      output.e4 = "active-note-5th";
     }
     if (pickChord === "d7" && pickPent === "p3") {
-      output.he2 = "active-note";
+      output.he2 = "active-note-3rd";
       output.b4 = "active-note";
-      output.g2 = "active-note";
-      output.d4 = "active-note";
+      output.g2 = "active-note-5th";
+      output.d4 = "active-note-3rd";
       output.d1 = "active-note";
-      output.e2 = "active-note";
+      output.e2 = "active-note-3rd";
     }
     if (pickChord === "M1" && pickPent === "p4") {
-      output.he4 = "active-note";
-      output.he1 = "active-note";
+      output.he4 = "active-note-5th";
+      output.he1 = "active-note-3rd";
       output.b2 = "active-note";
-      output.g1 = "active-note";
-      output.d3 = "active-note";
+      output.g1 = "active-note-5th";
+      output.d3 = "active-note-3rd";
       output.a4 = "active-note";
-      output.e4 = "active-note";
-      output.e1 = "active-note";
+      output.e4 = "active-note-5th";
+      output.e1 = "active-note-3rd";
     }
     if (pickChord === "m2" && pickPent === "p4") {
-      output.he2 = "active-note";
+      output.he2 = "active-note-3rd";
       output.b4 = "active-note";
-      output.g3 = "active-note";
-      output.d4 = "active-note";
+      output.g3 = "active-note-5th";
+      output.d4 = "active-note-3rd";
       output.d1 = "active-note";
-      output.a1 = "active-note";
-      output.e2 = "active-note";
+      output.a1 = "active-note-5th";
+      output.e2 = "active-note-3rd";
     }
     if (pickChord === "m3" && pickPent === "p4") {
       output.he1 = "active-note";
-      output.he4 = "active-note";
-      output.b1 = "active-note";
-      output.g1 = "active-note";
+      output.he4 = "active-note-3rd";
+      output.b1 = "active-note-5th";
+      output.g1 = "active-note-3rd";
       output.d3 = "active-note";
-      output.a3 = "active-note";
-      output.e4 = "active-note";
+      output.a3 = "active-note-5th";
+      output.e4 = "active-note-3rd";
       output.e1 = "active-note";
     }
     if (pickChord === "M4" && pickPent === "p4") {
       output.he2 = "active-note";
-      output.b2 = "active-note";
-      output.g3 = "active-note";
+      output.b2 = "active-note-5th";
+      output.g3 = "active-note-3rd";
       output.d4 = "active-note";
-      output.a4 = "active-note";
-      output.a1 = "active-note";
+      output.a4 = "active-note-5th";
+      output.a1 = "active-note-3rd";
       output.e2 = "active-note";
     }
     if (pickChord === "M5" && pickPent === "p4") {
       output.he4 = "active-note";
-      output.b1 = "active-note";
-      output.b4 = "active-note";
+      output.b1 = "active-note-3rd";
+      output.b4 = "active-note-5th";
       output.g1 = "active-note";
-      output.d1 = "active-note";
-      output.a3 = "active-note";
+      output.d1 = "active-note-5th";
+      output.a3 = "active-note-3rd";
       output.e4 = "active-note";
     }
     if (pickChord === "m6" && pickPent === "p4") {
-      output.he1 = "active-note";
-      output.b2 = "active-note";
+      output.he1 = "active-note-5th";
+      output.b2 = "active-note-3rd";
       output.g3 = "active-note";
-      output.d3 = "active-note";
-      output.a4 = "active-note";
+      output.d3 = "active-note-5th";
+      output.a4 = "active-note-3rd";
       output.a1 = "active-note";
-      output.e1 = "active-note";
+      output.e1 = "active-note-5th";
     }
     if (pickChord === "d7" && pickPent === "p4") {
-      output.he2 = "active-note";
-      output.b4 = "active-note";
+      output.he2 = "active-note-5th";
+      output.b4 = "active-note-3rd";
       output.b1 = "active-note";
-      output.d4 = "active-note";
-      output.d1 = "active-note";
+      output.d4 = "active-note-5th";
+      output.d1 = "active-note-3rd";
       output.a3 = "active-note";
-      output.e2 = "active-note";
+      output.e2 = "active-note-5th";
     }
     if (pickChord === "M1" && pickPent === "p5") {
-      output.he2 = "active-note";
-      output.b4 = "active-note";
+      output.he2 = "active-note-5th";
+      output.b4 = "active-note-3rd";
       output.g4 = "active-note";
-      output.d4 = "active-note";
-      output.d1 = "active-note";
+      output.d4 = "active-note-5th";
+      output.d1 = "active-note-3rd";
       output.a2 = "active-note";
-      output.e2 = "active-note";
+      output.e2 = "active-note-5th";
     }
     if (pickChord === "m2" && pickPent === "p5") {
-      output.he4 = "active-note";
+      output.he4 = "active-note-5th";
       output.b2 = "active-note";
-      output.g1 = "active-note";
-      output.d2 = "active-note";
+      output.b5 = "active-note-3rd";
+      output.g1 = "active-note-5th";
+      output.d2 = "active-note-3rd";
       output.a4 = "active-note";
-      output.e4 = "active-note";
+      output.e4 = "active-note-5th";
     }
     if (pickChord === "m3" && pickPent === "p5") {
-      output.he2 = "active-note";
+      output.he2 = "active-note-3rd";
       output.b4 = "active-note";
-      output.g3 = "active-note";
-      output.d4 = "active-note";
+      output.g3 = "active-note-5th";
+      output.d4 = "active-note-3rd";
       output.d1 = "active-note";
-      output.a1 = "active-note";
-      output.e2 = "active-note";
+      output.a1 = "active-note-5th";
+      output.e2 = "active-note-3rd";
     }
     if (pickChord === "M4" && pickPent === "p5") {
-      output.he4 = "active-note";
+      output.he4 = "active-note-3rd";
       output.b5 = "active-note";
-      output.g4 = "active-note";
-      output.g1 = "active-note";
+      output.g4 = "active-note-5th";
+      output.g1 = "active-note-3rd";
       output.d2 = "active-note";
-      output.a2 = "active-note";
-      output.e4 = "active-note";
+      output.a2 = "active-note-5th";
+      output.e4 = "active-note-3rd";
     }
     if (pickChord === "M5" && pickPent === "p5") {
       output.he2 = "active-note";
-      output.b2 = "active-note";
-      output.g3 = "active-note";
+      output.b2 = "active-note-5th";
+      output.g3 = "active-note-3rd";
       output.d4 = "active-note";
-      output.a4 = "active-note";
-      output.a1 = "active-note";
+      output.a4 = "active-note-5th";
+      output.a1 = "active-note-3rd";
       output.e2 = "active-note";
     }
     if (pickChord === "m6" && pickPent === "p5") {
       output.he4 = "active-note";
-      output.b4 = "active-note";
-      output.g4 = "active-note";
+      output.b4 = "active-note-5th";
+      output.g4 = "active-note-3rd";
       output.g1 = "active-note";
-      output.d1 = "active-note";
-      output.a2 = "active-note";
+      output.d1 = "active-note-5th";
+      output.a2 = "active-note-3rd";
       output.e4 = "active-note";
     }
     if (pickChord === "d7" && pickPent === "p5") {
-      output.b2 = "active-note";
+      output.b2 = "active-note-3rd";
       output.g3 = "active-note";
-      output.d2 = "active-note";
-      output.a4 = "active-note";
+      output.d2 = "active-note-5th";
+      output.a4 = "active-note-3rd";
       output.a1 = "active-note";
     }
 
