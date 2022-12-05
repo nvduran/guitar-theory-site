@@ -19,7 +19,7 @@ export default function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Charts</Nav.Link>
+              <Nav.Link href="/">Charts</Nav.Link>
               <Nav.Link href="/PrivacyPolicy">Privacy Policy</Nav.Link>
             </Nav>
           </Navbar.Collapse>
