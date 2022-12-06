@@ -110,6 +110,7 @@ body {
 .fretboard-container .string {
   border: 4px solid #f4f4f4;
   flex: 1;
+  border-radius: 0.4rem;
 }
 
 .fret0 {

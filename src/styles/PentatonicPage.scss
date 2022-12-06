@@ -10,6 +10,7 @@
     border: 0px;
     margin-top: 2rem;
     padding-bottom: 4px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
 .remove-fretboard-button {
@@ -96,6 +97,7 @@ button {
     height: 1rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
+    border-radius: .2rem;
 }
   
 .active-note-5th-key-example {
@@ -105,6 +107,7 @@ button {
     height: 1rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
+    border-radius: .2rem;
 }
   
 .active-note-3rd-key-example {
@@ -114,6 +117,7 @@ button {
     height: 1rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
+    border-radius: .2rem;
 }
 
 .settings-and-key-div {
