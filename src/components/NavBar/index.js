@@ -23,6 +23,7 @@ export default function NavBar() {
               <Nav.Link href="/">Charts</Nav.Link>
               <Nav.Link href="/AboutPentatonics">About Pentatonics</Nav.Link>
               <Nav.Link href="/PrivacyPolicy">Privacy Policy</Nav.Link>
+              <Nav.Link href="/About">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

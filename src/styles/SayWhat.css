@@ -1,0 +1,13 @@
+.about-pent-page-container-div {
+  padding: 2rem;
+}
+
+.about-pent-page-container-div-header {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-pent-page-container-div {
+    padding: 8rem;
+  }
+}/*# sourceMappingURL=SayWhat.css.map */
