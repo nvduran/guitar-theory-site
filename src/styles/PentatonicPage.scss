@@ -101,7 +101,13 @@ button {
 }
   
 .active-note-5th-key-example {
-    background-color: #6a7fdb9f;
+    background: repeating-linear-gradient(
+  45deg,
+  #6a7fdb9f,
+  #6a7fdb9f 5px,
+  #6a7fdbb7 5px,
+  #6a7fdbb7 10px
+);
     font-size: x-small;
     width: 4rem;
     height: 1rem;
@@ -111,7 +117,8 @@ button {
 }
   
 .active-note-3rd-key-example {
-    background-color: #6a7fdb4a;
+    background: #6a7fdb46;
+    background: radial-gradient(circle, $light-grey, 15%, #6a7fdb46 15%);
     font-size: x-small;
     width: 4rem;
     height: 1rem;

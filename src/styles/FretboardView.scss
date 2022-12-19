@@ -9,11 +9,18 @@ body {
 }
 
 .active-note-5th {
-    background-color: #6a7fdb9f;
+  background: repeating-linear-gradient(
+    45deg,
+    #6a7fdb9f,
+    #6a7fdb9f 5px,
+    #6a7fdbb7 5px,
+    #6a7fdbb7 10px
+  );
 }
 
 .active-note-3rd {
-  background-color: #6a7fdb4a;
+  background: #6a7fdb46;
+  background: radial-gradient(circle, $light-grey, 6%, #6a7fdb46 6%);
 }
 
 .pentatonic-note {

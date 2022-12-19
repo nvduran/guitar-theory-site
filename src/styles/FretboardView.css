@@ -8,11 +8,12 @@ body {
 }
 
 .active-note-5th {
-  background-color: rgba(106, 127, 219, 0.6235294118);
+  background: repeating-linear-gradient(45deg, rgba(106, 127, 219, 0.6235294118), rgba(106, 127, 219, 0.6235294118) 5px, rgba(106, 127, 219, 0.7176470588) 5px, rgba(106, 127, 219, 0.7176470588) 10px);
 }
 
 .active-note-3rd {
-  background-color: rgba(106, 127, 219, 0.2901960784);
+  background: rgba(106, 127, 219, 0.2745098039);
+  background: radial-gradient(circle, #e6e6e6, 6%, rgba(106, 127, 219, 0.2745098039) 6%);
 }
 
 .pentatonic-note {
