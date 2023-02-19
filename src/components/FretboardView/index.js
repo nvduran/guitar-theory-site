@@ -520,6 +520,11 @@ export default function FretboardView({ advancedSettings }) {
                         output.a2 = "active-note";
                         output.e2 = "active-note-5th";
                 }
+
+                // START AGAIN HERE
+                // START AGAIN HERE
+                // START AGAIN HERE
+
                 if (pickChord === "M1" && pickPent === "p4" && pickM === "major") {
                         output.he4 = "active-note-5th";
                         output.he1 = "active-note-3rd";
@@ -530,6 +535,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.e4 = "active-note-5th";
                         output.e1 = "active-note-3rd";
                 }
+                if (pickChord === "M1" && pickPent === "p4" && pickM === "minor") {
+                        output.he1 = "active-note-5th";
+                        output.b2 = "active-note-3rd";
+                        output.g3 = "active-note";
+                        output.d3 = "active-note-5th";
+                        output.a4 = "active-note-3rd";
+                        output.a1 = "active-note";
+                        output.e1 = "active-note-5th";
+                }
                 if (pickChord === "m2" && pickPent === "p4" && pickM === "major") {
                         output.he2 = "active-note-3rd";
                         output.b4 = "active-note";
@@ -538,6 +552,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.d1 = "active-note";
                         output.a1 = "active-note-5th";
                         output.e2 = "active-note-3rd";
+                }
+                if (pickChord === "m2" && pickPent === "p4" && pickM === "minor") {
+                        output.he2 = "active-note-5th";
+                        output.b4 = "active-note-3rd";
+                        output.g6 = "active-note";
+                        output.d4 = "active-note-5th";
+                        output.d1 = "active-note-3rd";
+                        output.a3 = "active-note";
+                        output.e2 = "active-note-5th";
                 }
                 if (pickChord === "m3" && pickPent === "p4" && pickM === "major") {
                         output.he1 = "active-note";
@@ -549,6 +572,16 @@ export default function FretboardView({ advancedSettings }) {
                         output.e4 = "active-note-3rd";
                         output.e1 = "active-note";
                 }
+                if (pickChord === "m3" && pickPent === "p4" && pickM === "minor") {
+                        output.he4 = "active-note-5th";
+                        output.he1 = "active-note-3rd";
+                        output.b2 = "active-note";
+                        output.g1 = "active-note-5th";
+                        output.d3 = "active-note-3rd";
+                        output.a4 = "active-note";
+                        output.e4 = "active-note-5th";
+                        output.e1 = "active-note-3rd";
+                }
                 if (pickChord === "M4" && pickPent === "p4" && pickM === "major") {
                         output.he2 = "active-note";
                         output.b2 = "active-note-5th";
@@ -557,6 +590,16 @@ export default function FretboardView({ advancedSettings }) {
                         output.a4 = "active-note-5th";
                         output.a1 = "active-note-3rd";
                         output.e2 = "active-note";
+                }
+                if (pickChord === "M4" && pickPent === "p4" && pickM === "minor") {
+                        output.he6 = "active-note-5th";
+                        output.he2 = "active-note-3rd";
+                        output.b4 = "active-note";
+                        output.g3 = "active-note-5th";
+                        output.d4 = "active-note-3rd";
+                        output.d1 = "active-note";
+                        output.a0 = "active-note-5th";
+                        output.e2 = "active-note-3rd";
                 }
                 if (pickChord === "M5" && pickPent === "p4" && pickM === "major") {
                         output.he4 = "active-note";
@@ -567,6 +610,16 @@ export default function FretboardView({ advancedSettings }) {
                         output.a3 = "active-note-3rd";
                         output.e4 = "active-note";
                 }
+                if (pickChord === "M5" && pickPent === "p4" && pickM === "minor") {
+                        output.he4 = "active-note-5th";
+                        output.he1 = "active-note-3rd";
+                        output.b2 = "active-note";
+                        output.g1 = "active-note-5th";
+                        output.d3 = "active-note-3rd";
+                        output.a4 = "active-note";
+                        output.e4 = "active-note-5th";
+                        output.e1 = "active-note-3rd";
+                }
                 if (pickChord === "m6" && pickPent === "p4" && pickM === "major") {
                         output.he1 = "active-note-5th";
                         output.b2 = "active-note-3rd";
@@ -575,6 +628,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.a4 = "active-note-3rd";
                         output.a1 = "active-note";
                         output.e1 = "active-note-5th";
+                }
+                if (pickChord === "m6" && pickPent === "p4" && pickM === "minor") {
+                        output.he2 = "active-note";
+                        output.b2 = "active-note-5th";
+                        output.g3 = "active-note-3rd";
+                        output.d4 = "active-note";
+                        output.a4 = "active-note-5th";
+                        output.a1 = "active-note-3rd";
+                        output.e2 = "active-note";
                 }
                 if (pickChord === "d7" && pickPent === "p4" && pickM === "major") {
                         output.he2 = "active-note-5th";
@@ -585,6 +647,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.a3 = "active-note";
                         output.e2 = "active-note-5th";
                 }
+                if (pickChord === "d7" && pickPent === "p4" && pickM === "minor") {
+                        output.he4 = "active-note";
+                        output.b4 = "active-note-5th";
+                        output.b1 = "active-note-3rd";
+                        output.g1 = "active-note";
+                        output.d1 = "active-note-5th";
+                        output.a3 = "active-note-3rd";
+                        output.e4 = "active-note";
+                }
                 if (pickChord === "M1" && pickPent === "p5" && pickM === "major") {
                         output.he2 = "active-note-5th";
                         output.b4 = "active-note-3rd";
@@ -593,6 +664,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.d1 = "active-note-3rd";
                         output.a2 = "active-note";
                         output.e2 = "active-note-5th";
+                }
+                if (pickChord === "M1" && pickPent === "p5" && pickM === "minor") {
+                        output.he4 = "active-note";
+                        output.b4 = "active-note-5th";
+                        output.g4 = "active-note-3rd";
+                        output.g1 = "active-note";
+                        output.d1 = "active-note-5th";
+                        output.a2 = "active-note-3rd";
+                        output.e4 = "active-note";
                 }
                 if (pickChord === "m2" && pickPent === "p5" && pickM === "major") {
                         output.he4 = "active-note-5th";
@@ -603,6 +683,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.a4 = "active-note";
                         output.e4 = "active-note-5th";
                 }
+                if (pickChord === "m2" && pickPent === "p5" && pickM === "minor") {
+                        output.he6 = "active-note";
+                        output.b5 = "active-note-5th";
+                        output.b2 = "active-note-3rd";
+                        output.g3 = "active-note";
+                        output.d2 = "active-note-5th";
+                        output.a4 = "active-note-3rd";
+                        output.a1 = "active-note";
+                }
                 if (pickChord === "m3" && pickPent === "p5" && pickM === "major") {
                         output.he2 = "active-note-3rd";
                         output.b4 = "active-note";
@@ -611,6 +700,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.d1 = "active-note";
                         output.a1 = "active-note-5th";
                         output.e2 = "active-note-3rd";
+                }
+                if (pickChord === "m3" && pickPent === "p5" && pickM === "minor") {
+                        output.he2 = "active-note-5th";
+                        output.b4 = "active-note-3rd";
+                        output.g4 = "active-note";
+                        output.d4 = "active-note-5th";
+                        output.d1 = "active-note-3rd";
+                        output.a2 = "active-note";
+                        output.e2 = "active-note-5th";
                 }
                 if (pickChord === "M4" && pickPent === "p5" && pickM === "major") {
                         output.he4 = "active-note-3rd";
@@ -621,6 +719,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.a2 = "active-note-5th";
                         output.e4 = "active-note-3rd";
                 }
+                if (pickChord === "M4" && pickPent === "p5" && pickM === "minor") {
+                        output.he4 = "active-note-5th";
+                        output.b5 = "active-note-3rd";
+                        output.b2 = "active-note";
+                        output.g1 = "active-note-5th";
+                        output.d2 = "active-note-3rd";
+                        output.a4 = "active-note";
+                        output.e4 = "active-note-5th";
+                }
                 if (pickChord === "M5" && pickPent === "p5" && pickM === "major") {
                         output.he2 = "active-note";
                         output.b2 = "active-note-5th";
@@ -629,6 +736,15 @@ export default function FretboardView({ advancedSettings }) {
                         output.a4 = "active-note-5th";
                         output.a1 = "active-note-3rd";
                         output.e2 = "active-note";
+                }
+                if (pickChord === "M5" && pickPent === "p5" && pickM === "minor") {
+                        output.he2 = "active-note-3rd";
+                        output.b4 = "active-note";
+                        output.g3 = "active-note-5th";
+                        output.d4 = "active-note-3rd";
+                        output.d1 = "active-note";
+                        output.a1 = "active-note-5th";
+                        output.e2 = "active-note-3rd";
                 }
                 if (pickChord === "m6" && pickPent === "p5" && pickM === "major") {
                         output.he4 = "active-note";
@@ -639,12 +755,30 @@ export default function FretboardView({ advancedSettings }) {
                         output.a2 = "active-note-3rd";
                         output.e4 = "active-note";
                 }
+                if (pickChord === "m6" && pickPent === "p5" && pickM === "minor") {
+                        output.he4 = "active-note-3rd";
+                        output.b5 = "active-note";
+                        output.g4 = "active-note-5th";
+                        output.g1 = "active-note-3rd";
+                        output.d2 = "active-note";
+                        output.a2 = "active-note-5th";
+                        output.e4 = "active-note-3rd";
+                }
                 if (pickChord === "d7" && pickPent === "p5" && pickM === "major") {
                         output.b2 = "active-note-3rd";
                         output.g3 = "active-note";
                         output.d2 = "active-note-5th";
                         output.a4 = "active-note-3rd";
                         output.a1 = "active-note";
+                }
+                if (pickChord === "d7" && pickPent === "p5" && pickM === "minor") {
+                        output.he2 = "active-note";
+                        output.b2 = "active-note-5th";
+                        output.g3 = "active-note-3rd";
+                        output.d4 = "active-note";
+                        output.a4 = "active-note-5th";
+                        output.a1 = "active-note-3rd";
+                        output.e2 = "active-note";
                 }
 
                 setChordState(output);
