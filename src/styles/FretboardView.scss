@@ -43,7 +43,7 @@ body {
 .selection-div-4f {
   display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: $light-grey;
     width: 570px;
     padding-top: 1.2em;
@@ -150,6 +150,7 @@ body {
 }
 
 .key-choice-dropdown-div select {
+  font-size: small;
   background-color: $light-grey;
   color: $text-color;
   border-radius: 0%;
@@ -163,6 +164,7 @@ body {
 }
 
 .major-minor-choice-dropdown-div select {
+  font-size: small;
   background-color: $light-grey;
   color: $text-color;
   border-radius: 0%;
@@ -176,6 +178,7 @@ body {
 }
 
 .shape-choice-dropdown-div select {
+  font-size: small;
   background-color: $light-grey;
   color: $text-color;
   border-radius: 0%;

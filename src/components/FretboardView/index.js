@@ -845,7 +845,7 @@ export default function FretboardView({ advancedSettings }) {
                                         </div>
                                         <div className="submit-div">
                                                 <div className="submit-button" onClick={() => handleChoiceSubmit(chordStr, pentStr, majMin)}>
-                                                        submit
+                                                        Submit
                                                 </div>
                                         </div>
                                 </div>
