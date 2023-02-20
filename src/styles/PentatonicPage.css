@@ -110,7 +110,7 @@ button {
 
 .active-note-3rd-key-example {
   background: rgba(106, 127, 219, 0.2745098039);
-  background: radial-gradient(circle, #e6e6e6, 15%, rgba(106, 127, 219, 0.2745098039) 15%);
+  background: radial-gradient(circle, #e6e6e6, 10%, rgba(106, 127, 219, 0.2745098039) 40%);
   font-size: x-small;
   width: 4rem;
   height: 1rem;
