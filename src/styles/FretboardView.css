@@ -36,7 +36,7 @@ body {
 .selection-div-4f {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #e6e6e6;
   width: 570px;
   padding-top: 1.2em;
@@ -139,6 +139,7 @@ body {
 }
 
 .key-choice-dropdown-div select {
+  width: auto;
   font-size: small;
   background-color: #e6e6e6;
   color: #848484;
