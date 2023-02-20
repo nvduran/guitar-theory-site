@@ -809,17 +809,31 @@ export default function FretboardView({ advancedSettings }) {
                                                         <option value="minor">Minor Key</option>
                                                 </select>
                                         </div>
-                                        <div className="key-choice-dropdown-div">
-                                                <select value={chordStr} onChange={handleKeyChoiceChange} className="selector-select-class">
-                                                        <option value="M1">I</option>
-                                                        <option value="m2">ii</option>
-                                                        <option value="m3">iii</option>
-                                                        <option value="M4">IV</option>
-                                                        <option value="M5">V</option>
-                                                        <option value="m6">vi</option>
-                                                        <option value="d7">vii</option>
-                                                </select>
-                                        </div>
+                                        {majMin === "major" ? (
+                                                <div className="key-choice-dropdown-div">
+                                                        <select value={chordStr} onChange={handleKeyChoiceChange} className="selector-select-class">
+                                                                <option value="M1">I</option>
+                                                                <option value="m2">ii</option>
+                                                                <option value="m3">iii</option>
+                                                                <option value="M4">IV</option>
+                                                                <option value="M5">V</option>
+                                                                <option value="m6">vi</option>
+                                                                <option value="d7">viidim</option>
+                                                        </select>
+                                                </div>
+                                        ) : (
+                                                <div className="key-choice-dropdown-div">
+                                                        <select value={chordStr} onChange={handleKeyChoiceChange} className="selector-select-class">
+                                                                <option value="M1">i</option>
+                                                                <option value="m2">iidim</option>
+                                                                <option value="m3">III</option>
+                                                                <option value="M4">iv</option>
+                                                                <option value="M5">v</option>
+                                                                <option value="m6">VI</option>
+                                                                <option value="d7">VII</option>
+                                                        </select>
+                                                </div>
+                                        )}
                                         <div className="shape-choice-dropdown-div">
                                                 <select value={pentStr} onChange={handlePentChoiceChange} className="selector-select-class">
                                                         <option value="p1">Shape 1</option>
