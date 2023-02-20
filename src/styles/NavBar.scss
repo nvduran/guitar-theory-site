@@ -12,6 +12,32 @@ nav {
     color: $brand-purple;
 }
 
+.nav-link{
+    font-size: small;
+}
+
 .navbar-brand:hover {
     color: $brand-purple;
+}
+
+.nav-guitar-div {
+    text-align: left;
+    font-size: small;
+    margin-bottom: -.4rem;
+}
+
+.nav-theory-div {
+    text-align: left;
+    font-size: small;
+}
+
+.nav-theory-div::after {
+    content: ".com";
+    
+    color: $brand-purple;
+}
+
+.nav-bs-container {
+    margin-left: 1rem;
+    width: 100%;
 }

@@ -10,6 +10,31 @@ nav {
   color: #6A7FDB;
 }
 
+.nav-link {
+  font-size: small;
+}
+
 .navbar-brand:hover {
   color: #6A7FDB;
+}
+
+.nav-guitar-div {
+  text-align: left;
+  font-size: small;
+  margin-bottom: -0.4rem;
+}
+
+.nav-theory-div {
+  text-align: left;
+  font-size: small;
+}
+
+.nav-theory-div::after {
+  content: ".com";
+  color: #6A7FDB;
+}
+
+.nav-bs-container {
+  margin-left: 1rem;
+  width: 100%;
 }/*# sourceMappingURL=NavBar.css.map */
