@@ -46,6 +46,18 @@ body {
   line-height: 1rem;
 }
 
+@media (max-width: 700px) {
+  /* CSS that should be displayed if width is equal to or less than 991px goes here */
+  .selector-select-class {
+    margin: 0px 1rem 0px 1rem !important;
+  }
+  .submit-div {
+    align-items: center;
+  }
+  .selection-div-4f {
+    width: 100%;
+  }
+}
 .selection-div-container {
   display: flex;
   flex-direction: column;
