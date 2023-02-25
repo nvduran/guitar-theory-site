@@ -232,8 +232,8 @@ export default function FullFretboard() {
 
                 for (let i = 0; i < 25; i++) {
                         for (let j = 1; j < 7; j++) {
-                                if (tempFretboardObj.fret + i.string + j.pitch === note) {
-                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note";
+                                if (tempFretboardObj["fret" + i]["string" + j].pitch === note) {
+                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root";
                                 } else {
                                         tempFretboardObj["fret" + i]["string" + j].divClass = "";
                                 }
