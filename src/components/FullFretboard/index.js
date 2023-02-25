@@ -233,7 +233,11 @@ export default function FullFretboard() {
                 let arrOfNotes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
                 let indexOfNote = arrOfNotes.indexOf(keyRoot);
                 let indexOfThird = indexOfNote + 4;
+                if (keyMajorOrMinor === "minor") {
+                        indexOfThird = indexOfNote + 3;
+                }
                 let targetThird = arrOfNotes[indexOfThird];
+                console.log(targetThird);
                 let indexOfFifth = indexOfNote + 7;
                 let targetFifth = arrOfNotes[indexOfFifth];
                 console.log("changeNoteHighlighting() called with note: " + keyRoot);
