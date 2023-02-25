@@ -11,6 +11,14 @@
   border: 1px black solid;
 }
 
+.ff-fret0 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 2rem;
+  min-width: 2rem;
+}
+
 .ff-fret1 {
   display: flex;
   flex-direction: column;
