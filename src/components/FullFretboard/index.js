@@ -4,9 +4,13 @@ import "../../styles/FullFretboard.css";
 
 export default function FullFretboard() {
         const [updatePage, setUpdatePage] = useState(false);
+        const [noteNames, setNoteNames] = useState(true);
+        const [keyRoot, setKeyRoot] = useState("C");
+        const [keyMajorOrMinor, setKeyMajorOrMinor] = useState("major");
         const [userFilters, setUserFilters] = useState({
                 noteNames: true,
                 keyRoot: "C",
+                keyMajorOrMinor: "major",
         });
         // INITIAL FRETBORD OBJECT
         const [fretboardObj, setFretboardObj] = useState({
@@ -213,32 +217,24 @@ export default function FullFretboard() {
         });
 
         const handleRootChange = (e) => {
-                console.log(userFilters);
-                let tempUserFilters = userFilters;
-                console.log(tempUserFilters);
-                tempUserFilters.keyRoot = e.target.value.toString();
-                tempUserFilters.noteNames = userFilters.noteNames;
-                console.log(tempUserFilters);
-
-                setUserFilters(tempUserFilters);
-                console.log(userFilters);
-
-                changeNoteHighlighting(e.target.value.toString());
+                setKeyRoot(e.target.value);
         };
 
-        const changeNoteHighlighting = (note) => {
+        // START CHANGE NOTE HIGHLIGHTING FUNCTION
+        const changeNoteHighlighting = () => {
                 let arrOfNotes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
-                let indexOfNote = arrOfNotes.indexOf(note);
+                let indexOfNote = arrOfNotes.indexOf(keyRoot);
                 let indexOfThird = indexOfNote + 4;
                 let targetThird = arrOfNotes[indexOfThird];
                 let indexOfFifth = indexOfNote + 7;
                 let targetFifth = arrOfNotes[indexOfFifth];
-                console.log("changeNoteHighlighting() called with note: " + note);
+                console.log("changeNoteHighlighting() called with note: " + keyRoot);
                 let tempFretboardObj = fretboardObj;
 
+                //SORT OUT ALL OF THE CHORD TONES HERE
                 for (let i = 0; i < 25; i++) {
                         for (let j = 1; j < 7; j++) {
-                                if (tempFretboardObj["fret" + i]["string" + j].pitch === note) {
+                                if (tempFretboardObj["fret" + i]["string" + j].pitch === keyRoot) {
                                         tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root";
                                 } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetThird) {
                                         tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-third";
@@ -252,6 +248,23 @@ export default function FullFretboard() {
 
                 setFretboardObj(tempFretboardObj);
                 setUpdatePage(!updatePage);
+        };
+        // END CHANGE NOTE HIGHLIGHTING FUNCTION
+
+        const handleMajorOrMinorChange = (e) => {
+                console.log(e.target.value);
+                let tempUserFilters = userFilters;
+                tempUserFilters.majorOrMinor = e.target.value.toString();
+                tempUserFilters.noteNames = userFilters.noteNames;
+                tempUserFilters.keyRoot = userFilters.keyRoot;
+                setUserFilters(tempUserFilters);
+                console.log(userFilters);
+
+                changeNoteHighlighting(e.target.value.toString());
+        };
+
+        const handleSubmit = (e) => {
+                changeNoteHighlighting();
         };
 
         return (
@@ -463,7 +476,7 @@ export default function FullFretboard() {
 
                         <div className="ff-key-selection">
                                 <div className="ff-key-selection-title">Root:</div>
-                                <select value={userFilters.keyRoot} onChange={handleRootChange} className="">
+                                <select value={keyRoot} onChange={handleRootChange} className="">
                                         <option value="C">C</option>
                                         <option value="C#">C#</option>
                                         <option value="D">D</option>
@@ -477,6 +490,16 @@ export default function FullFretboard() {
                                         <option value="A#">A#</option>
                                         <option value="B">B</option>
                                 </select>
+                        </div>
+                        <div className="ff-major-or-minor-selection">
+                                <div className="ff-major-or-minor-selection-title">Major or Minor:</div>
+                                <select value={userFilters.keyMajorOrMinor} onChange={handleMajorOrMinorChange} className="">
+                                        <option value="major">Major</option>
+                                        <option value="minor">Minor</option>
+                                </select>
+                        </div>
+                        <div className="ff-submit-button">
+                                <button onClick={handleSubmit}>Submit</button>
                         </div>
                 </div>
         );
