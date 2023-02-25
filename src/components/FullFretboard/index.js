@@ -227,6 +227,12 @@ export default function FullFretboard() {
         };
 
         const changeNoteHighlighting = (note) => {
+                let arrOfNotes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
+                let indexOfNote = arrOfNotes.indexOf(note);
+                let indexOfThird = indexOfNote + 4;
+                let targetThird = arrOfNotes[indexOfThird];
+                let indexOfFifth = indexOfNote + 7;
+                let targetFifth = arrOfNotes[indexOfFifth];
                 console.log("changeNoteHighlighting() called with note: " + note);
                 let tempFretboardObj = fretboardObj;
 
@@ -234,6 +240,10 @@ export default function FullFretboard() {
                         for (let j = 1; j < 7; j++) {
                                 if (tempFretboardObj["fret" + i]["string" + j].pitch === note) {
                                         tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root";
+                                } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetThird) {
+                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-third";
+                                } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetFifth) {
+                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-fifth";
                                 } else {
                                         tempFretboardObj["fret" + i]["string" + j].divClass = "";
                                 }
