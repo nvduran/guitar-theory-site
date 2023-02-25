@@ -220,6 +220,14 @@ export default function FullFretboard() {
                 setKeyRoot(e.target.value);
         };
 
+        const handleMajorOrMinorChange = (e) => {
+                setKeyMajorOrMinor(e.target.value);
+        };
+
+        const handleSubmit = (e) => {
+                changeNoteHighlighting();
+        };
+
         // START CHANGE NOTE HIGHLIGHTING FUNCTION
         const changeNoteHighlighting = () => {
                 let arrOfNotes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
@@ -250,22 +258,6 @@ export default function FullFretboard() {
                 setUpdatePage(!updatePage);
         };
         // END CHANGE NOTE HIGHLIGHTING FUNCTION
-
-        const handleMajorOrMinorChange = (e) => {
-                console.log(e.target.value);
-                let tempUserFilters = userFilters;
-                tempUserFilters.majorOrMinor = e.target.value.toString();
-                tempUserFilters.noteNames = userFilters.noteNames;
-                tempUserFilters.keyRoot = userFilters.keyRoot;
-                setUserFilters(tempUserFilters);
-                console.log(userFilters);
-
-                changeNoteHighlighting(e.target.value.toString());
-        };
-
-        const handleSubmit = (e) => {
-                changeNoteHighlighting();
-        };
 
         return (
                 <div>
@@ -493,7 +485,7 @@ export default function FullFretboard() {
                         </div>
                         <div className="ff-major-or-minor-selection">
                                 <div className="ff-major-or-minor-selection-title">Major or Minor:</div>
-                                <select value={userFilters.keyMajorOrMinor} onChange={handleMajorOrMinorChange} className="">
+                                <select value={keyMajorOrMinor} onChange={handleMajorOrMinorChange} className="">
                                         <option value="major">Major</option>
                                         <option value="minor">Minor</option>
                                 </select>
