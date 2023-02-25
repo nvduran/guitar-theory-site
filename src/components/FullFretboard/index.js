@@ -3,8 +3,10 @@ import { useState } from "react";
 import "../../styles/FullFretboard.css";
 
 export default function FullFretboard() {
+        const [updatePage, setUpdatePage] = useState(false);
         const [userFilters, setUserFilters] = useState({
                 noteNames: true,
+                keyRoot: "C",
         });
         // INITIAL FRETBORD OBJECT
         const [fretboardObj, setFretboardObj] = useState({
@@ -210,7 +212,37 @@ export default function FullFretboard() {
                 },
         });
 
-        console.log(fretboardObj);
+        const handleRootChange = (e) => {
+                console.log(userFilters);
+                let tempUserFilters = userFilters;
+                console.log(tempUserFilters);
+                tempUserFilters.keyRoot = e.target.value.toString();
+                tempUserFilters.noteNames = userFilters.noteNames;
+                console.log(tempUserFilters);
+
+                setUserFilters(tempUserFilters);
+                console.log(userFilters);
+
+                changeNoteHighlighting(e.target.value.toString());
+        };
+
+        const changeNoteHighlighting = (note) => {
+                console.log("changeNoteHighlighting() called with note: " + note);
+                let tempFretboardObj = fretboardObj;
+
+                for (let i = 0; i < 25; i++) {
+                        for (let j = 1; j < 7; j++) {
+                                if (tempFretboardObj.fret + i.string + j.pitch === note) {
+                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note";
+                                } else {
+                                        tempFretboardObj["fret" + i]["string" + j].divClass = "";
+                                }
+                        }
+                }
+
+                setFretboardObj(tempFretboardObj);
+                setUpdatePage(!updatePage);
+        };
 
         return (
                 <div>
@@ -417,6 +449,14 @@ export default function FullFretboard() {
                                                 <div className={fretboardObj.fret24.string1.divClass}>{userFilters.noteNames ? fretboardObj.fret24.string1.pitch : null} </div>
                                         </div>
                                 </div>
+                        </div>
+
+                        <div className="ff-key-selection">
+                                <div className="ff-key-selection-title">Root:</div>
+                                <select value={userFilters.keyRoot} onChange={handleRootChange} className="">
+                                        <option value="C">C</option>
+                                        <option value="C#">C#</option>
+                                </select>
                         </div>
                 </div>
         );
