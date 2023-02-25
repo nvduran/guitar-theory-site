@@ -1,0 +1,228 @@
+.big-full-fretboard-container {
+  margin-top: 1rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.big-full-fretboard-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px black solid;
+}
+
+.ff-fret1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret3 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret4 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret5 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret6 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret7 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret8 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret9 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret10 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret11 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret12 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret13 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret14 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret15 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret16 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret17 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret18 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret19 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret20 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret21 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret22 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret23 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}
+
+.ff-fret24 {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  width: 50px;
+  min-width: 50px;
+  border: 1px rgb(252, 154, 154) solid;
+}/*# sourceMappingURL=FullFretboard.css.map */
