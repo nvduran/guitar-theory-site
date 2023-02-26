@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px black solid;
 }
 
 .ff-fret0 {
@@ -17,6 +16,8 @@
   min-height: 12rem;
   width: 2rem;
   min-width: 2rem;
+  justify-content: space-around;
+  border-right: 4px #6A7FDB solid;
 }
 
 .ff-fret1 {
@@ -25,7 +26,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret2 {
@@ -34,7 +36,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret3 {
@@ -43,7 +46,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret4 {
@@ -52,7 +56,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret5 {
@@ -61,7 +66,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret6 {
@@ -70,7 +76,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret7 {
@@ -79,7 +86,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret8 {
@@ -88,7 +96,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret9 {
@@ -97,7 +106,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret10 {
@@ -106,7 +116,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret11 {
@@ -115,7 +126,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret12 {
@@ -124,7 +136,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret13 {
@@ -133,7 +146,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret14 {
@@ -142,7 +156,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret15 {
@@ -151,7 +166,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret16 {
@@ -160,7 +176,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret17 {
@@ -169,7 +186,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret18 {
@@ -178,7 +196,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret19 {
@@ -187,7 +206,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret20 {
@@ -196,7 +216,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret21 {
@@ -205,7 +226,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret22 {
@@ -214,7 +236,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret23 {
@@ -223,7 +246,8 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .ff-fret24 {
@@ -232,20 +256,54 @@
   min-height: 12rem;
   width: 5rem;
   min-width: 5rem;
-  border: 1px rgb(252, 154, 154) solid;
+  border: 1px #6A7FDB solid;
+  justify-content: space-around;
 }
 
 .highlighted-note-root {
   background-color: rgb(154, 156, 252);
-  border: 1px rgb(252, 154, 154) solid;
+  font-size: small;
+  min-height: 1.2rem;
+}
+
+.highlighted-note-root-no-note-name {
+  background-color: rgb(154, 156, 252);
+  font-size: 0px;
+  min-height: 1.2rem;
 }
 
 .highlighted-note-third {
   background-color: rgb(61, 231, 146);
-  border: 1px rgb(252, 154, 154) solid;
+  font-size: small;
+  min-height: 1.2rem;
+}
+
+.highlighted-note-third-no-note-name {
+  background-color: rgb(61, 231, 146);
+  font-size: 0px;
+  min-height: 1.2rem;
 }
 
 .highlighted-note-fifth {
   background-color: rgb(187, 43, 43);
-  border: 1px rgb(252, 154, 154) solid;
+  font-size: small;
+  min-height: 1.2rem;
+}
+
+.highlighted-note-fifth-no-note-name {
+  background-color: rgb(187, 43, 43);
+  font-size: 0px;
+  min-height: 1.2rem;
+}
+
+.regular-note-div {
+  background-color: rgb(214, 214, 214);
+  font-size: small;
+  min-height: 1.2rem;
+}
+
+.regular-note-div-no-note-name {
+  background-color: rgb(214, 214, 214);
+  font-size: 0px;
+  min-height: 1.2rem;
 }/*# sourceMappingURL=FullFretboard.css.map */

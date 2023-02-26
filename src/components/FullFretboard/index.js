@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { setState } from "react";
 import "../../styles/FullFretboard.css";
 
 export default function FullFretboard() {
@@ -228,6 +229,11 @@ export default function FullFretboard() {
                 changeNoteHighlighting();
         };
 
+        const handleNoteNamesChange = (e) => {
+                //handle note names on/off and refresh fretboard
+                setNoteNames(e.target.value);
+        };
+
         // START CHANGE NOTE HIGHLIGHTING FUNCTION
         const changeNoteHighlighting = () => {
                 let arrOfNotes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
@@ -237,59 +243,83 @@ export default function FullFretboard() {
                         indexOfThird = indexOfNote + 3;
                 }
                 let targetThird = arrOfNotes[indexOfThird];
-                console.log(targetThird);
                 let indexOfFifth = indexOfNote + 7;
                 let targetFifth = arrOfNotes[indexOfFifth];
-                console.log("changeNoteHighlighting() called with note: " + keyRoot);
                 let tempFretboardObj = fretboardObj;
 
-                //SORT OUT ALL OF THE CHORD TONES HERE
-                for (let i = 0; i < 25; i++) {
-                        for (let j = 1; j < 7; j++) {
-                                if (tempFretboardObj["fret" + i]["string" + j].pitch === keyRoot) {
-                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root";
-                                } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetThird) {
-                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-third";
-                                } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetFifth) {
-                                        tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-fifth";
-                                } else {
-                                        tempFretboardObj["fret" + i]["string" + j].divClass = "";
+                //SORT OUT ALL OF THE CHORD TONES HERE WITH ***NO*** NOTE NAMES
+                console.log("noteNames: " + noteNames);
+                if (noteNames === true) {
+                        console.log("SLES");
+                        for (let i = 0; i < 25; i++) {
+                                for (let j = 1; j < 7; j++) {
+                                        if (tempFretboardObj["fret" + i]["string" + j].pitch === keyRoot) {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root";
+                                        } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetThird) {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-third";
+                                        } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetFifth) {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-fifth";
+                                        } else {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "regular-note-div";
+                                        }
+                                }
+                        }
+                        setFretboardObj(tempFretboardObj);
+                } else {
+                        console.log("NOS");
+                        for (let i = 0; i < 25; i++) {
+                                for (let j = 1; j < 7; j++) {
+                                        if (tempFretboardObj["fret" + i]["string" + j].pitch === keyRoot) {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root-no-note-name";
+                                        } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetThird) {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-third-no-note-name";
+                                        } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetFifth) {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-fifth-no-note-name";
+                                        } else {
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "regular-note-div-no-note-name";
+                                        }
                                 }
                         }
                 }
+                //SORT OUT ALL OF THE CHORD TONES HERE WITH NOTE NAMES
 
                 setFretboardObj(tempFretboardObj);
+
                 setUpdatePage(!updatePage);
         };
         // END CHANGE NOTE HIGHLIGHTING FUNCTION
+
+        console.log(noteNames);
+
+        let NotesNamesChoice = noteNames;
 
         return (
                 <div>
                         <div className="big-full-fretboard-container">
                                 <div className="big-full-fretboard-div">
                                         <div className="ff-fret0">
-                                                <div className={fretboardObj.fret0.string6.divClass}>{userFilters.noteNames ? fretboardObj.fret0.string6.pitch : null} </div>
-                                                <div className={fretboardObj.fret0.string5.divClass}>{userFilters.noteNames ? fretboardObj.fret0.string5.pitch : null} </div>
-                                                <div className={fretboardObj.fret0.string4.divClass}>{userFilters.noteNames ? fretboardObj.fret0.string4.pitch : null} </div>
-                                                <div className={fretboardObj.fret0.string3.divClass}>{userFilters.noteNames ? fretboardObj.fret0.string3.pitch : null} </div>
-                                                <div className={fretboardObj.fret0.string2.divClass}>{userFilters.noteNames ? fretboardObj.fret0.string2.pitch : null} </div>
-                                                <div className={fretboardObj.fret0.string1.divClass}>{userFilters.noteNames ? fretboardObj.fret0.string1.pitch : null} </div>
+                                                <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string6.pitch : null} </div>
+                                                <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string5.pitch : null} </div>
+                                                <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string4.pitch : null} </div>
+                                                <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string3.pitch : null} </div>
+                                                <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string2.pitch : null} </div>
+                                                <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string1.pitch : null} </div>
                                         </div>
                                         <div className="ff-fret1">
-                                                <div className={fretboardObj.fret1.string6.divClass}>{userFilters.noteNames ? fretboardObj.fret1.string6.pitch : null} </div>
-                                                <div className={fretboardObj.fret1.string5.divClass}>{userFilters.noteNames ? fretboardObj.fret1.string5.pitch : null} </div>
-                                                <div className={fretboardObj.fret1.string4.divClass}>{userFilters.noteNames ? fretboardObj.fret1.string4.pitch : null} </div>
-                                                <div className={fretboardObj.fret1.string3.divClass}>{userFilters.noteNames ? fretboardObj.fret1.string3.pitch : null} </div>
-                                                <div className={fretboardObj.fret1.string2.divClass}>{userFilters.noteNames ? fretboardObj.fret1.string2.pitch : null} </div>
-                                                <div className={fretboardObj.fret1.string1.divClass}>{userFilters.noteNames ? fretboardObj.fret1.string1.pitch : null} </div>
+                                                <div className={fretboardObj.fret1.string6.divClass}>{NotesNamesChoice ? fretboardObj.fret1.string6.pitch : ""} </div>
+                                                <div className={fretboardObj.fret1.string5.divClass}>{noteNames ? fretboardObj.fret1.string5.pitch : ""} </div>
+                                                <div className={fretboardObj.fret1.string4.divClass}>{noteNames ? fretboardObj.fret1.string4.pitch : null} </div>
+                                                <div className={fretboardObj.fret1.string3.divClass}>{noteNames ? fretboardObj.fret1.string3.pitch : null} </div>
+                                                <div className={fretboardObj.fret1.string2.divClass}>{noteNames ? fretboardObj.fret1.string2.pitch : null} </div>
+                                                <div className={fretboardObj.fret1.string1.divClass}>{noteNames ? fretboardObj.fret1.string1.pitch : null} </div>
                                         </div>
                                         <div className="ff-fret2">
-                                                <div className={fretboardObj.fret2.string6.divClass}>{userFilters.noteNames ? fretboardObj.fret2.string6.pitch : null} </div>
-                                                <div className={fretboardObj.fret2.string5.divClass}>{userFilters.noteNames ? fretboardObj.fret2.string5.pitch : null} </div>
-                                                <div className={fretboardObj.fret2.string4.divClass}>{userFilters.noteNames ? fretboardObj.fret2.string4.pitch : null} </div>
-                                                <div className={fretboardObj.fret2.string3.divClass}>{userFilters.noteNames ? fretboardObj.fret2.string3.pitch : null} </div>
-                                                <div className={fretboardObj.fret2.string2.divClass}>{userFilters.noteNames ? fretboardObj.fret2.string2.pitch : null} </div>
-                                                <div className={fretboardObj.fret2.string1.divClass}>{userFilters.noteNames ? fretboardObj.fret2.string1.pitch : null} </div>
+                                                <div className={fretboardObj.fret2.string6.divClass}>{noteNames ? fretboardObj.fret2.string6.pitch : null} </div>
+                                                <div className={fretboardObj.fret2.string5.divClass}>{noteNames ? fretboardObj.fret2.string5.pitch : null} </div>
+                                                <div className={fretboardObj.fret2.string4.divClass}>{noteNames ? fretboardObj.fret2.string4.pitch : null} </div>
+                                                <div className={fretboardObj.fret2.string3.divClass}>{noteNames ? fretboardObj.fret2.string3.pitch : null} </div>
+                                                <div className={fretboardObj.fret2.string2.divClass}>{noteNames ? fretboardObj.fret2.string2.pitch : null} </div>
+                                                <div className={fretboardObj.fret2.string1.divClass}>{noteNames ? fretboardObj.fret2.string1.pitch : null} </div>
                                         </div>
                                         <div className="ff-fret3">
                                                 <div className={fretboardObj.fret3.string6.divClass}>{userFilters.noteNames ? fretboardObj.fret3.string6.pitch : null} </div>
@@ -471,7 +501,7 @@ export default function FullFretboard() {
                         </div>
 
                         <div className="ff-key-selection">
-                                <div className="ff-key-selection-title">Root:</div>
+                                <div className="ff-key-selection-title">Chord:</div>
                                 <select value={keyRoot} onChange={handleRootChange} className="">
                                         <option value="C">C</option>
                                         <option value="C#">C#</option>
@@ -494,8 +524,16 @@ export default function FullFretboard() {
                                         <option value="minor">Minor</option>
                                 </select>
                         </div>
-                        <div className="ff-submit-button">
-                                <button onClick={handleSubmit}>Submit</button>
+
+                        <div className="ff-note-names-selection">
+                                <div className="ff-note-names-selection-title">Note Names:</div>
+                                <select value={noteNames} onChange={handleNoteNamesChange} className="">
+                                        <option value={true}>Yes</option>
+                                        <option value={false}>No</option>
+                                </select>
+                                <div className="ff-submit-button">
+                                        <button onClick={handleSubmit}>Submit</button>
+                                </div>
                         </div>
                 </div>
         );
