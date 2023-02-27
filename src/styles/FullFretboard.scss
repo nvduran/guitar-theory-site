@@ -30,6 +30,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret2 {
     display: flex;
@@ -39,6 +40,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret3 {
     display: flex;
@@ -48,6 +50,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret4 {
     display: flex;
@@ -57,6 +60,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret5 {
     display: flex;
@@ -66,6 +70,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret6 {
     display: flex;
@@ -75,6 +80,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret7 {
     display: flex;
@@ -84,6 +90,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret8 {
     display: flex;
@@ -93,6 +100,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret9 {
     display: flex;
@@ -102,6 +110,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret10 {
     display: flex;
@@ -111,6 +120,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret11 {
     display: flex;
@@ -120,6 +130,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret12 {
     display: flex;
@@ -129,6 +140,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret13 {
     display: flex;
@@ -138,6 +150,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret14 {
     display: flex;
@@ -147,6 +160,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret15 {
     display: flex;
@@ -156,6 +170,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret16 {
     display: flex;
@@ -165,6 +180,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret17 {
     display: flex;
@@ -174,6 +190,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret18 {
     display: flex;
@@ -183,6 +200,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret19 {
     display: flex;
@@ -192,6 +210,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret20 {
     display: flex;
@@ -201,6 +220,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret21 {
     display: flex;
@@ -210,6 +230,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret22 {
     display: flex;
@@ -219,6 +240,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret23 {
     display: flex;
@@ -228,6 +250,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 .ff-fret24 {
     display: flex;
@@ -237,6 +260,7 @@
     min-width: 5rem;
     border: 1px $brand-purple solid;
     justify-content: space-around;
+    font-size: small;
 }
 
 .highlighted-note-root {
@@ -285,4 +309,36 @@
     background-color: rgb(214, 214, 214);
     font-size: 0px;
     min-height: 1.2rem;
+}
+
+.big-full-fretboard-fret-numbers-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fret-number-div {    
+    display: flex;
+    flex-direction: column;
+    min-height: 1rem;
+    width: 5rem;
+    min-width: 5rem;
+    justify-content: space-around;
+    font-size: x-small;
+}
+
+.fret-number-div-0fret {
+    width: 2rem;
+    min-width: 2rem;
+}
+
+
+.fret-number-dot-div {  
+    width: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    background: #686868;
+    align-self: center;
+    margin-bottom: 4px;
 }

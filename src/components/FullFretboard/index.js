@@ -24,196 +24,196 @@ export default function FullFretboard() {
                         string6: { pitch: "E", divClass: "" },
                 },
                 fret1: {
-                        string1: { pitch: "F", divClass: "" },
-                        string2: { pitch: "A#", divClass: "" },
-                        string3: { pitch: "D#", divClass: "" },
-                        string4: { pitch: "G#", divClass: "" },
-                        string5: { pitch: "C", divClass: "" },
-                        string6: { pitch: "F", divClass: "" },
+                        string1: { pitch: "F", divClass: "regular-note-div" },
+                        string2: { pitch: "A#", divClass: "regular-note-div" },
+                        string3: { pitch: "D#", divClass: "regular-note-div" },
+                        string4: { pitch: "G#", divClass: "regular-note-div" },
+                        string5: { pitch: "C", divClass: "regular-note-div" },
+                        string6: { pitch: "F", divClass: "regular-note-div" },
                 },
                 fret2: {
-                        string1: { pitch: "F#", divClass: "" },
-                        string2: { pitch: "B", divClass: "" },
-                        string3: { pitch: "E", divClass: "" },
-                        string4: { pitch: "A", divClass: "" },
-                        string5: { pitch: "C#", divClass: "" },
-                        string6: { pitch: "F#", divClass: "" },
+                        string1: { pitch: "F#", divClass: "regular-note-div" },
+                        string2: { pitch: "B", divClass: "regular-note-div" },
+                        string3: { pitch: "E", divClass: "regular-note-div" },
+                        string4: { pitch: "A", divClass: "regular-note-div" },
+                        string5: { pitch: "C#", divClass: "regular-note-div" },
+                        string6: { pitch: "F#", divClass: "regular-note-div" },
                 },
                 fret3: {
-                        string1: { pitch: "G", divClass: "" },
-                        string2: { pitch: "C", divClass: "" },
-                        string3: { pitch: "F", divClass: "" },
-                        string4: { pitch: "A#", divClass: "" },
-                        string5: { pitch: "D", divClass: "" },
-                        string6: { pitch: "G", divClass: "" },
+                        string1: { pitch: "G", divClass: "regular-note-div" },
+                        string2: { pitch: "C", divClass: "regular-note-div" },
+                        string3: { pitch: "F", divClass: "regular-note-div" },
+                        string4: { pitch: "A#", divClass: "regular-note-div" },
+                        string5: { pitch: "D", divClass: "regular-note-div" },
+                        string6: { pitch: "G", divClass: "regular-note-div" },
                 },
                 fret4: {
-                        string1: { pitch: "G#", divClass: "" },
-                        string2: { pitch: "C#", divClass: "" },
-                        string3: { pitch: "F#", divClass: "" },
-                        string4: { pitch: "B", divClass: "" },
-                        string5: { pitch: "D#", divClass: "" },
-                        string6: { pitch: "G#", divClass: "" },
+                        string1: { pitch: "G#", divClass: "regular-note-div" },
+                        string2: { pitch: "C#", divClass: "regular-note-div" },
+                        string3: { pitch: "F#", divClass: "regular-note-div" },
+                        string4: { pitch: "B", divClass: "regular-note-div" },
+                        string5: { pitch: "D#", divClass: "regular-note-div" },
+                        string6: { pitch: "G#", divClass: "regular-note-div" },
                 },
                 fret5: {
-                        string1: { pitch: "A", divClass: "" },
-                        string2: { pitch: "D", divClass: "" },
-                        string3: { pitch: "G", divClass: "" },
-                        string4: { pitch: "C", divClass: "" },
-                        string5: { pitch: "E", divClass: "" },
-                        string6: { pitch: "A", divClass: "" },
+                        string1: { pitch: "A", divClass: "regular-note-div" },
+                        string2: { pitch: "D", divClass: "regular-note-div" },
+                        string3: { pitch: "G", divClass: "regular-note-div" },
+                        string4: { pitch: "C", divClass: "regular-note-div" },
+                        string5: { pitch: "E", divClass: "regular-note-div" },
+                        string6: { pitch: "A", divClass: "regular-note-div" },
                 },
                 fret6: {
-                        string1: { pitch: "A#", divClass: "" },
-                        string2: { pitch: "D#", divClass: "" },
-                        string3: { pitch: "G#", divClass: "" },
-                        string4: { pitch: "C#", divClass: "" },
-                        string5: { pitch: "F", divClass: "" },
-                        string6: { pitch: "A#", divClass: "" },
+                        string1: { pitch: "A#", divClass: "regular-note-div" },
+                        string2: { pitch: "D#", divClass: "regular-note-div" },
+                        string3: { pitch: "G#", divClass: "regular-note-div" },
+                        string4: { pitch: "C#", divClass: "regular-note-div" },
+                        string5: { pitch: "F", divClass: "regular-note-div" },
+                        string6: { pitch: "A#", divClass: "regular-note-div" },
                 },
                 fret7: {
-                        string1: { pitch: "B", divClass: "" },
-                        string2: { pitch: "E", divClass: "" },
-                        string3: { pitch: "A", divClass: "" },
-                        string4: { pitch: "D", divClass: "" },
-                        string5: { pitch: "F#", divClass: "" },
-                        string6: { pitch: "B", divClass: "" },
+                        string1: { pitch: "B", divClass: "regular-note-div" },
+                        string2: { pitch: "E", divClass: "regular-note-div" },
+                        string3: { pitch: "A", divClass: "regular-note-div" },
+                        string4: { pitch: "D", divClass: "regular-note-div" },
+                        string5: { pitch: "F#", divClass: "regular-note-div" },
+                        string6: { pitch: "B", divClass: "regular-note-div" },
                 },
                 fret8: {
-                        string1: { pitch: "C", divClass: "" },
-                        string2: { pitch: "F", divClass: "" },
-                        string3: { pitch: "A#", divClass: "" },
-                        string4: { pitch: "D#", divClass: "" },
-                        string5: { pitch: "G", divClass: "" },
-                        string6: { pitch: "C", divClass: "" },
+                        string1: { pitch: "C", divClass: "regular-note-div" },
+                        string2: { pitch: "F", divClass: "regular-note-div" },
+                        string3: { pitch: "A#", divClass: "regular-note-div" },
+                        string4: { pitch: "D#", divClass: "regular-note-div" },
+                        string5: { pitch: "G", divClass: "regular-note-div" },
+                        string6: { pitch: "C", divClass: "regular-note-div" },
                 },
                 fret9: {
-                        string1: { pitch: "C#", divClass: "" },
-                        string2: { pitch: "F#", divClass: "" },
-                        string3: { pitch: "B", divClass: "" },
-                        string4: { pitch: "E", divClass: "" },
-                        string5: { pitch: "G#", divClass: "" },
-                        string6: { pitch: "C#", divClass: "" },
+                        string1: { pitch: "C#", divClass: "regular-note-div" },
+                        string2: { pitch: "F#", divClass: "regular-note-div" },
+                        string3: { pitch: "B", divClass: "regular-note-div" },
+                        string4: { pitch: "E", divClass: "regular-note-div" },
+                        string5: { pitch: "G#", divClass: "regular-note-div" },
+                        string6: { pitch: "C#", divClass: "regular-note-div" },
                 },
                 fret10: {
-                        string1: { pitch: "D", divClass: "" },
-                        string2: { pitch: "G", divClass: "" },
-                        string3: { pitch: "C", divClass: "" },
-                        string4: { pitch: "F", divClass: "" },
-                        string5: { pitch: "A", divClass: "" },
-                        string6: { pitch: "D", divClass: "" },
+                        string1: { pitch: "D", divClass: "regular-note-div" },
+                        string2: { pitch: "G", divClass: "regular-note-div" },
+                        string3: { pitch: "C", divClass: "regular-note-div" },
+                        string4: { pitch: "F", divClass: "regular-note-div" },
+                        string5: { pitch: "A", divClass: "regular-note-div" },
+                        string6: { pitch: "D", divClass: "regular-note-div" },
                 },
                 fret11: {
-                        string1: { pitch: "D#", divClass: "" },
-                        string2: { pitch: "G#", divClass: "" },
-                        string3: { pitch: "C#", divClass: "" },
-                        string4: { pitch: "F#", divClass: "" },
-                        string5: { pitch: "A#", divClass: "" },
-                        string6: { pitch: "D#", divClass: "" },
+                        string1: { pitch: "D#", divClass: "regular-note-div" },
+                        string2: { pitch: "G#", divClass: "regular-note-div" },
+                        string3: { pitch: "C#", divClass: "regular-note-div" },
+                        string4: { pitch: "F#", divClass: "regular-note-div" },
+                        string5: { pitch: "A#", divClass: "regular-note-div" },
+                        string6: { pitch: "D#", divClass: "regular-note-div" },
                 },
                 fret12: {
-                        string1: { pitch: "E", divClass: "" },
-                        string2: { pitch: "A", divClass: "" },
-                        string3: { pitch: "D", divClass: "" },
-                        string4: { pitch: "G", divClass: "" },
-                        string5: { pitch: "B", divClass: "" },
-                        string6: { pitch: "E", divClass: "" },
+                        string1: { pitch: "E", divClass: "regular-note-div" },
+                        string2: { pitch: "A", divClass: "regular-note-div" },
+                        string3: { pitch: "D", divClass: "regular-note-div" },
+                        string4: { pitch: "G", divClass: "regular-note-div" },
+                        string5: { pitch: "B", divClass: "regular-note-div" },
+                        string6: { pitch: "E", divClass: "regular-note-div" },
                 },
                 fret13: {
-                        string1: { pitch: "F", divClass: "" },
-                        string2: { pitch: "A#", divClass: "" },
-                        string3: { pitch: "D#", divClass: "" },
-                        string4: { pitch: "G#", divClass: "" },
-                        string5: { pitch: "C", divClass: "" },
-                        string6: { pitch: "F", divClass: "" },
+                        string1: { pitch: "F", divClass: "regular-note-div" },
+                        string2: { pitch: "A#", divClass: "regular-note-div" },
+                        string3: { pitch: "D#", divClass: "regular-note-div" },
+                        string4: { pitch: "G#", divClass: "regular-note-div" },
+                        string5: { pitch: "C", divClass: "regular-note-div" },
+                        string6: { pitch: "F", divClass: "regular-note-div" },
                 },
                 fret14: {
-                        string1: { pitch: "F#", divClass: "" },
-                        string2: { pitch: "B", divClass: "" },
-                        string3: { pitch: "E", divClass: "" },
-                        string4: { pitch: "A", divClass: "" },
-                        string5: { pitch: "C#", divClass: "" },
-                        string6: { pitch: "F#", divClass: "" },
+                        string1: { pitch: "F#", divClass: "regular-note-div" },
+                        string2: { pitch: "B", divClass: "regular-note-div" },
+                        string3: { pitch: "E", divClass: "regular-note-div" },
+                        string4: { pitch: "A", divClass: "regular-note-div" },
+                        string5: { pitch: "C#", divClass: "regular-note-div" },
+                        string6: { pitch: "F#", divClass: "regular-note-div" },
                 },
                 fret15: {
-                        string1: { pitch: "G", divClass: "" },
-                        string2: { pitch: "C", divClass: "" },
-                        string3: { pitch: "F", divClass: "" },
-                        string4: { pitch: "A#", divClass: "" },
-                        string5: { pitch: "D", divClass: "" },
-                        string6: { pitch: "G", divClass: "" },
+                        string1: { pitch: "G", divClass: "regular-note-div" },
+                        string2: { pitch: "C", divClass: "regular-note-div" },
+                        string3: { pitch: "F", divClass: "regular-note-div" },
+                        string4: { pitch: "A#", divClass: "regular-note-div" },
+                        string5: { pitch: "D", divClass: "regular-note-div" },
+                        string6: { pitch: "G", divClass: "regular-note-div" },
                 },
                 fret16: {
-                        string1: { pitch: "G#", divClass: "" },
-                        string2: { pitch: "C#", divClass: "" },
-                        string3: { pitch: "F#", divClass: "" },
-                        string4: { pitch: "B", divClass: "" },
-                        string5: { pitch: "D#", divClass: "" },
-                        string6: { pitch: "G#", divClass: "" },
+                        string1: { pitch: "G#", divClass: "regular-note-div" },
+                        string2: { pitch: "C#", divClass: "regular-note-div" },
+                        string3: { pitch: "F#", divClass: "regular-note-div" },
+                        string4: { pitch: "B", divClass: "regular-note-div" },
+                        string5: { pitch: "D#", divClass: "regular-note-div" },
+                        string6: { pitch: "G#", divClass: "regular-note-div" },
                 },
                 fret17: {
-                        string1: { pitch: "A", divClass: "" },
-                        string2: { pitch: "D", divClass: "" },
-                        string3: { pitch: "G", divClass: "" },
-                        string4: { pitch: "C", divClass: "" },
-                        string5: { pitch: "E", divClass: "" },
-                        string6: { pitch: "A", divClass: "" },
+                        string1: { pitch: "A", divClass: "regular-note-div" },
+                        string2: { pitch: "D", divClass: "regular-note-div" },
+                        string3: { pitch: "G", divClass: "regular-note-div" },
+                        string4: { pitch: "C", divClass: "regular-note-div" },
+                        string5: { pitch: "E", divClass: "regular-note-div" },
+                        string6: { pitch: "A", divClass: "regular-note-div" },
                 },
                 fret18: {
-                        string1: { pitch: "A#", divClass: "" },
-                        string2: { pitch: "D#", divClass: "" },
-                        string3: { pitch: "G#", divClass: "" },
-                        string4: { pitch: "C#", divClass: "" },
-                        string5: { pitch: "F", divClass: "" },
-                        string6: { pitch: "A#", divClass: "" },
+                        string1: { pitch: "A#", divClass: "regular-note-div" },
+                        string2: { pitch: "D#", divClass: "regular-note-div" },
+                        string3: { pitch: "G#", divClass: "regular-note-div" },
+                        string4: { pitch: "C#", divClass: "regular-note-div" },
+                        string5: { pitch: "F", divClass: "regular-note-div" },
+                        string6: { pitch: "A#", divClass: "regular-note-div" },
                 },
                 fret19: {
-                        string1: { pitch: "B", divClass: "" },
-                        string2: { pitch: "E", divClass: "" },
-                        string3: { pitch: "A", divClass: "" },
-                        string4: { pitch: "D", divClass: "" },
-                        string5: { pitch: "F#", divClass: "" },
-                        string6: { pitch: "B", divClass: "" },
+                        string1: { pitch: "B", divClass: "regular-note-div" },
+                        string2: { pitch: "E", divClass: "regular-note-div" },
+                        string3: { pitch: "A", divClass: "regular-note-div" },
+                        string4: { pitch: "D", divClass: "regular-note-div" },
+                        string5: { pitch: "F#", divClass: "regular-note-div" },
+                        string6: { pitch: "B", divClass: "regular-note-div" },
                 },
                 fret20: {
-                        string1: { pitch: "C", divClass: "" },
-                        string2: { pitch: "F", divClass: "" },
-                        string3: { pitch: "A#", divClass: "" },
-                        string4: { pitch: "D#", divClass: "" },
-                        string5: { pitch: "G", divClass: "" },
-                        string6: { pitch: "C", divClass: "" },
+                        string1: { pitch: "C", divClass: "regular-note-div" },
+                        string2: { pitch: "F", divClass: "regular-note-div" },
+                        string3: { pitch: "A#", divClass: "regular-note-div" },
+                        string4: { pitch: "D#", divClass: "regular-note-div" },
+                        string5: { pitch: "G", divClass: "regular-note-div" },
+                        string6: { pitch: "C", divClass: "regular-note-div" },
                 },
                 fret21: {
-                        string1: { pitch: "C#", divClass: "" },
-                        string2: { pitch: "F#", divClass: "" },
-                        string3: { pitch: "B", divClass: "" },
-                        string4: { pitch: "E", divClass: "" },
-                        string5: { pitch: "G#", divClass: "" },
-                        string6: { pitch: "C#", divClass: "" },
+                        string1: { pitch: "C#", divClass: "regular-note-div" },
+                        string2: { pitch: "F#", divClass: "regular-note-div" },
+                        string3: { pitch: "B", divClass: "regular-note-div" },
+                        string4: { pitch: "E", divClass: "regular-note-div" },
+                        string5: { pitch: "G#", divClass: "regular-note-div" },
+                        string6: { pitch: "C#", divClass: "regular-note-div" },
                 },
                 fret22: {
-                        string1: { pitch: "D", divClass: "" },
-                        string2: { pitch: "G", divClass: "" },
-                        string3: { pitch: "C", divClass: "" },
-                        string4: { pitch: "F", divClass: "" },
-                        string5: { pitch: "A", divClass: "" },
-                        string6: { pitch: "D", divClass: "" },
+                        string1: { pitch: "D", divClass: "regular-note-div" },
+                        string2: { pitch: "G", divClass: "regular-note-div" },
+                        string3: { pitch: "C", divClass: "regular-note-div" },
+                        string4: { pitch: "F", divClass: "regular-note-div" },
+                        string5: { pitch: "A", divClass: "regular-note-div" },
+                        string6: { pitch: "D", divClass: "regular-note-div" },
                 },
                 fret23: {
-                        string1: { pitch: "D#", divClass: "" },
-                        string2: { pitch: "G#", divClass: "" },
-                        string3: { pitch: "C#", divClass: "" },
-                        string4: { pitch: "F#", divClass: "" },
-                        string5: { pitch: "A#", divClass: "" },
-                        string6: { pitch: "D#", divClass: "" },
+                        string1: { pitch: "D#", divClass: "regular-note-div" },
+                        string2: { pitch: "G#", divClass: "regular-note-div" },
+                        string3: { pitch: "C#", divClass: "regular-note-div" },
+                        string4: { pitch: "F#", divClass: "regular-note-div" },
+                        string5: { pitch: "A#", divClass: "regular-note-div" },
+                        string6: { pitch: "D#", divClass: "regular-note-div" },
                 },
                 fret24: {
-                        string1: { pitch: "E", divClass: "" },
-                        string2: { pitch: "A", divClass: "" },
-                        string3: { pitch: "D", divClass: "" },
-                        string4: { pitch: "G", divClass: "" },
-                        string5: { pitch: "B", divClass: "" },
-                        string6: { pitch: "E", divClass: "" },
+                        string1: { pitch: "E", divClass: "regular-note-div" },
+                        string2: { pitch: "A", divClass: "regular-note-div" },
+                        string3: { pitch: "D", divClass: "regular-note-div" },
+                        string4: { pitch: "G", divClass: "regular-note-div" },
+                        string5: { pitch: "B", divClass: "regular-note-div" },
+                        string6: { pitch: "E", divClass: "regular-note-div" },
                 },
         });
 
@@ -281,7 +281,6 @@ export default function FullFretboard() {
                                 }
                         }
                 }
-                //SORT OUT ALL OF THE CHORD TONES HERE WITH NOTE NAMES
 
                 setFretboardObj(tempFretboardObj);
 
@@ -296,6 +295,53 @@ export default function FullFretboard() {
         return (
                 <div>
                         <div className="big-full-fretboard-container">
+                                <div className="big-full-fretboard-fret-numbers-div">
+                                        <div className="fret-number-div-0fret"></div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">3</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">5</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">7</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">9</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">12</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">15</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">17</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">19</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">21</div>
+                                        </div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div"></div>
+                                        <div className="fret-number-div">
+                                                <div className="fret-number-dot-div">24</div>
+                                        </div>
+                                </div>
                                 <div className="big-full-fretboard-div">
                                         <div className="ff-fret0">
                                                 <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string6.pitch : null} </div>
