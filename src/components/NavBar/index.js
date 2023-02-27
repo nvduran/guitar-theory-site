@@ -18,11 +18,11 @@ export default function NavBar() {
                                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                                         <Navbar.Collapse id="responsive-navbar-nav">
                                                 <Nav className="me-auto">
+                                                        <Nav.Link href="/FullFretboard">Fretboard View</Nav.Link>
                                                         <Nav.Link href="/">Charts</Nav.Link>
                                                         <Nav.Link href="/AboutPentatonics">About Pentatonics</Nav.Link>
                                                         <Nav.Link href="/PrivacyPolicy">Privacy Policy</Nav.Link>
                                                         <Nav.Link href="/About">About</Nav.Link>
-                                                        <Nav.Link href="/FullFretboard">Fretboard View</Nav.Link>
                                                 </Nav>
                                         </Navbar.Collapse>
                                 </Container>

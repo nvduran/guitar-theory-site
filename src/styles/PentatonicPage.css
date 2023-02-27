@@ -123,4 +123,25 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: end;
+}
+
+.new-feature-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #6A7FDB;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 24rem;
+  cursor: pointer;
+}
+
+.new-feature-banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=PentatonicPage.css.map */
