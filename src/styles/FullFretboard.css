@@ -1,5 +1,6 @@
 .big-full-fretboard-container {
-  margin-top: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
   overflow-x: scroll;
   overflow-y: hidden;
 }
