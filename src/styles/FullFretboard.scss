@@ -270,7 +270,7 @@
 }
 
 .highlighted-note-root-no-note-name {
-    background-color: rgb(154, 156, 252);
+    background-color: #6A7FDB;
     font-size: 0px;
     min-height: 1.2rem;
 }
@@ -282,7 +282,8 @@
 }
 
 .highlighted-note-third-no-note-name {
-    background-color: rgb(61, 231, 146);
+    background: #6a7fdb46;
+    background: radial-gradient(circle, $light-grey, 8%, #6a7fdb46 40%);
     font-size: 0px;
     min-height: 1.2rem;
 }
@@ -294,7 +295,13 @@
 }
 
 .highlighted-note-fifth-no-note-name {
-    background-color: rgb(187, 43, 43);
+    background: repeating-linear-gradient(
+    45deg,
+    #6a7fdb9f,
+    #6a7fdb9f 5px,
+    #6a7fdbb7 5px,
+    #6a7fdbb7 10px
+  );
     font-size: 0px;
     min-height: 1.2rem;
 }
@@ -341,4 +348,51 @@
     background: #686868;
     align-self: center;
     margin-bottom: 4px;
+}
+
+.ff-chord-type-selection-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: small;
+    margin-bottom: 1rem;
+}
+.ff-note-names-selection{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.ff-submit-button {
+    cursor: pointer;
+}
+
+.ff-submit-button:hover {
+    color: $brand-purple
+}
+
+.ff-clear-button {
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.ff-clear-button:hover {
+    color: $brand-purple
+}
+
+.below-ff-change-selectors {
+    background-color: $background-color;
+    border-top: 1px solid $text-color;
+    border-bottom: 0px solid #424242;
+    border-left: 0px solid #424242;
+    border-right: 0px solid #424242;
+}
+
+.ff-note-names-selection-title{
+    margin-bottom: .5rem;
+}
+
+.ff-key-selection-title {
+    margin-bottom: .5rem;
 }

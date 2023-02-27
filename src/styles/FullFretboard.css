@@ -291,7 +291,7 @@
 }
 
 .highlighted-note-root-no-note-name {
-  background-color: rgb(154, 156, 252);
+  background-color: #6A7FDB;
   font-size: 0px;
   min-height: 1.2rem;
 }
@@ -303,7 +303,8 @@
 }
 
 .highlighted-note-third-no-note-name {
-  background-color: rgb(61, 231, 146);
+  background: rgba(106, 127, 219, 0.2745098039);
+  background: radial-gradient(circle, #e6e6e6, 8%, rgba(106, 127, 219, 0.2745098039) 40%);
   font-size: 0px;
   min-height: 1.2rem;
 }
@@ -315,7 +316,7 @@
 }
 
 .highlighted-note-fifth-no-note-name {
-  background-color: rgb(187, 43, 43);
+  background: repeating-linear-gradient(45deg, rgba(106, 127, 219, 0.6235294118), rgba(106, 127, 219, 0.6235294118) 5px, rgba(106, 127, 219, 0.7176470588) 5px, rgba(106, 127, 219, 0.7176470588) 10px);
   font-size: 0px;
   min-height: 1.2rem;
 }
@@ -361,4 +362,52 @@
   background: #686868;
   align-self: center;
   margin-bottom: 4px;
+}
+
+.ff-chord-type-selection-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.ff-note-names-selection {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.ff-submit-button {
+  cursor: pointer;
+}
+
+.ff-submit-button:hover {
+  color: #6A7FDB;
+}
+
+.ff-clear-button {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.ff-clear-button:hover {
+  color: #6A7FDB;
+}
+
+.below-ff-change-selectors {
+  background-color: #f4f4f4;
+  border-top: 1px solid #848484;
+  border-bottom: 0px solid #424242;
+  border-left: 0px solid #424242;
+  border-right: 0px solid #424242;
+}
+
+.ff-note-names-selection-title {
+  margin-bottom: 0.5rem;
+}
+
+.ff-key-selection-title {
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=FullFretboard.css.map */

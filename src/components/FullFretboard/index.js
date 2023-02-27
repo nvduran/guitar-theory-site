@@ -229,6 +229,11 @@ export default function FullFretboard() {
                 changeNoteHighlighting();
         };
 
+        const handleClear = (e) => {
+                //reload page to clear fretboard
+                window.location.reload();
+        };
+
         const handleNoteNamesChange = (e) => {
                 //handle note names on/off and refresh fretboard
                 setNoteNames(e.target.value);
@@ -254,17 +259,18 @@ export default function FullFretboard() {
                         for (let i = 0; i < 25; i++) {
                                 for (let j = 1; j < 7; j++) {
                                         if (tempFretboardObj["fret" + i]["string" + j].pitch === keyRoot) {
-                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-root";
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "active-note";
                                         } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetThird) {
-                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-third";
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "active-note-3rd";
                                         } else if (tempFretboardObj["fret" + i]["string" + j].pitch === targetFifth) {
-                                                tempFretboardObj["fret" + i]["string" + j].divClass = "highlighted-note-fifth";
+                                                tempFretboardObj["fret" + i]["string" + j].divClass = "active-note-5th";
                                         } else {
                                                 tempFretboardObj["fret" + i]["string" + j].divClass = "regular-note-div";
                                         }
                                 }
                         }
                         setFretboardObj(tempFretboardObj);
+                        setUpdatePage(!updatePage);
                 } else {
                         console.log("NOS");
                         for (let i = 0; i < 25; i++) {
@@ -280,11 +286,9 @@ export default function FullFretboard() {
                                         }
                                 }
                         }
+                        setFretboardObj(tempFretboardObj);
+                        setUpdatePage(!updatePage);
                 }
-
-                setFretboardObj(tempFretboardObj);
-
-                setUpdatePage(!updatePage);
         };
         // END CHANGE NOTE HIGHLIGHTING FUNCTION
 
@@ -352,8 +356,8 @@ export default function FullFretboard() {
                                                 <div className="fret-0-notes-div">{userFilters.noteNames ? fretboardObj.fret0.string1.pitch : null} </div>
                                         </div>
                                         <div className="ff-fret1">
-                                                <div className={fretboardObj.fret1.string6.divClass}>{NotesNamesChoice ? fretboardObj.fret1.string6.pitch : ""} </div>
-                                                <div className={fretboardObj.fret1.string5.divClass}>{noteNames ? fretboardObj.fret1.string5.pitch : ""} </div>
+                                                <div className={fretboardObj.fret1.string6.divClass}>{fretboardObj.fret1.string6.pitch} </div>
+                                                <div className={fretboardObj.fret1.string5.divClass}>{noteNames ? fretboardObj.fret1.string5.pitch : null} </div>
                                                 <div className={fretboardObj.fret1.string4.divClass}>{noteNames ? fretboardObj.fret1.string4.pitch : null} </div>
                                                 <div className={fretboardObj.fret1.string3.divClass}>{noteNames ? fretboardObj.fret1.string3.pitch : null} </div>
                                                 <div className={fretboardObj.fret1.string2.divClass}>{noteNames ? fretboardObj.fret1.string2.pitch : null} </div>
@@ -546,39 +550,52 @@ export default function FullFretboard() {
                                 </div>
                         </div>
 
-                        <div className="ff-key-selection">
-                                <div className="ff-key-selection-title">Chord:</div>
-                                <select value={keyRoot} onChange={handleRootChange} className="">
-                                        <option value="C">C</option>
-                                        <option value="C#">C#</option>
-                                        <option value="D">D</option>
-                                        <option value="D#">D#</option>
-                                        <option value="E">E</option>
-                                        <option value="F">F</option>
-                                        <option value="F#">F#</option>
-                                        <option value="G">G</option>
-                                        <option value="G#">G#</option>
-                                        <option value="A">A</option>
-                                        <option value="A#">A#</option>
-                                        <option value="B">B</option>
-                                </select>
-                        </div>
-                        <div className="ff-major-or-minor-selection">
-                                <div className="ff-major-or-minor-selection-title">Major or Minor:</div>
-                                <select value={keyMajorOrMinor} onChange={handleMajorOrMinorChange} className="">
-                                        <option value="major">Major</option>
-                                        <option value="minor">Minor</option>
-                                </select>
+                        <div className="ff-chord-type-selection-area">
+                                <div className="ff-key-selection">
+                                        <div className="ff-key-selection-title">Chord:</div>
+                                        <select value={keyRoot} onChange={handleRootChange} className="below-ff-change-selectors">
+                                                <option value="C">C</option>
+                                                <option value="C#">C#</option>
+                                                <option value="D">D</option>
+                                                <option value="D#">D#</option>
+                                                <option value="E">E</option>
+                                                <option value="F">F</option>
+                                                <option value="F#">F#</option>
+                                                <option value="G">G</option>
+                                                <option value="G#">G#</option>
+                                                <option value="A">A</option>
+                                                <option value="A#">A#</option>
+                                                <option value="B">B</option>
+                                        </select>
+                                        <select value={keyMajorOrMinor} onChange={handleMajorOrMinorChange} className="below-ff-change-selectors">
+                                                <option value="major">Major</option>
+                                                <option value="minor">Minor</option>
+                                        </select>
+                                </div>
+
+                                <div className="ff-note-names-selection">
+                                        <div className="ff-note-names-selection-title">Note Names:</div>
+                                        <select value={noteNames} onChange={handleNoteNamesChange} className="below-ff-change-selectors">
+                                                <option value={true}>Yes</option>
+                                                <option value={false}>No</option>
+                                        </select>
+                                </div>
+                                <div className="ff-submit-button" onClick={handleSubmit}>
+                                        Submit
+                                </div>
+                                <div className="ff-clear-button" onClick={handleClear}>
+                                        Reset
+                                </div>
                         </div>
 
-                        <div className="ff-note-names-selection">
-                                <div className="ff-note-names-selection-title">Note Names:</div>
-                                <select value={noteNames} onChange={handleNoteNamesChange} className="">
-                                        <option value={true}>Yes</option>
-                                        <option value={false}>No</option>
-                                </select>
-                                <div className="ff-submit-button">
-                                        <button onClick={handleSubmit}>Submit</button>
+                        {/* FRETBOARD COLOR KEY */}
+                        <div className="fretboard-view-footer">
+                                <div className="footer-big-div">
+                                        <div className="footer-little-div">
+                                                <div className="active-note-key-example">Root</div>
+                                                <div className="active-note-3rd-key-example">Third</div>
+                                                <div className="active-note-5th-key-example">Fifth</div>
+                                        </div>
                                 </div>
                         </div>
                 </div>
