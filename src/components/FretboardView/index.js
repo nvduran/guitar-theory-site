@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/FretboardView.css";
 import { useState } from "react";
+import axios from "axios";
 
 export default function FretboardView({ advancedSettings }) {
         const [fretCount, setFretCount] = useState(advancedSettings.frets);
@@ -782,6 +783,17 @@ export default function FretboardView({ advancedSettings }) {
                 }
 
                 setChordState(output);
+                submitActivityLog("submit", "user", "pentatonic");
+        };
+
+        const submitActivityLog = (action, user, details) => {
+                console.log("submitting activity log");
+                const log = {
+                        action: action,
+                        user: user,
+                        details: details,
+                };
+                axios.post("https://irsite4-backend.herokuapp.com/guitarDb/activity", log).then((res) => console.log(res.data));
         };
 
         // handle major/minor selection and setMajMin

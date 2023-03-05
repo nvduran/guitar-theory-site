@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { setState } from "react";
+import axios from "axios";
 import "../../styles/FullFretboard.css";
 
 export default function FullFretboard() {
@@ -227,6 +228,7 @@ export default function FullFretboard() {
 
         const handleSubmit = (e) => {
                 changeNoteHighlighting();
+                submitActivityLog("submit", "user", "full fretboard");
         };
 
         const handleClear = (e) => {
@@ -237,6 +239,16 @@ export default function FullFretboard() {
         const handleNoteNamesChange = (e) => {
                 //handle note names on/off and refresh fretboard
                 setNoteNames(e.target.value);
+        };
+
+        const submitActivityLog = (action, user, details) => {
+                console.log("submitting activity log");
+                const log = {
+                        action: action,
+                        user: user,
+                        details: details,
+                };
+                axios.post("https://irsite4-backend.herokuapp.com/guitarDb/activity", log).then((res) => console.log(res.data));
         };
 
         // START CHANGE NOTE HIGHLIGHTING FUNCTION
