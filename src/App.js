@@ -13,7 +13,8 @@ function App() {
                 <div className="App">
                         <NavBar />
                         <Routes>
-                                <Route path="/" element={<PentatonicPage />} />
+                                <Route path="/" element={<FullFretboard />} />
+                                <Route path="/PentatonicCharts" element={<PentatonicPage />} />
                                 <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
                                 <Route path="/AboutPentatonics" element={<SayWhat />} />
                                 <Route path="/About" element={<About />} />
