@@ -311,6 +311,7 @@ export default function FullFretboard() {
         return (
                 <div>
                         <div className="big-full-fretboard-container">
+                                <h1 className="hidden-h1">View all of the notes and chords on the fretboard. Music theory applied to the guitar.</h1>
                                 <div className="big-full-fretboard-fret-numbers-div">
                                         <div className="fret-number-div-0fret"></div>
                                         <div className="fret-number-div"></div>

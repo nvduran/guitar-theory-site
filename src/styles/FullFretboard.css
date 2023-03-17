@@ -411,4 +411,8 @@
 
 .ff-key-selection-title {
   margin-bottom: 0.5rem;
+}
+
+.hidden-h1 {
+  display: none;
 }/*# sourceMappingURL=FullFretboard.css.map */
