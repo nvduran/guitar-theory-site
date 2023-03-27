@@ -6,7 +6,7 @@ import "../../styles/FullFretboard.css";
 
 export default function FullFretboard() {
         const [updatePage, setUpdatePage] = useState(false);
-        const [noteNames, setNoteNames] = useState(true);
+        const [noteNames, setNoteNames] = useState("on");
         const [keyRoot, setKeyRoot] = useState("C");
         const [keyMajorOrMinor, setKeyMajorOrMinor] = useState("major");
         const [userFilters, setUserFilters] = useState({
@@ -238,7 +238,14 @@ export default function FullFretboard() {
 
         const handleNoteNamesChange = (e) => {
                 //handle note names on/off and refresh fretboard
-                setNoteNames(e.target.value);
+
+                if (e.target.value === "on") {
+                        setNoteNames("on");
+                }
+                if (e.target.value === "off") {
+                        setNoteNames("off");
+                }
+                changeNoteHighlighting();
         };
 
         const submitActivityLog = (action, user, details) => {
@@ -264,9 +271,9 @@ export default function FullFretboard() {
                 let targetFifth = arrOfNotes[indexOfFifth];
                 let tempFretboardObj = fretboardObj;
 
-                //SORT OUT ALL OF THE CHORD TONES HERE WITH ***NO*** NOTE NAMES
+                //SORT OUT ALL OF THE CHORD TONE HIGHLIGHT COLORS HERE WITH ***NO*** NOTE NAMES
                 console.log("noteNames: " + noteNames);
-                if (noteNames === true) {
+                if (noteNames === "on") {
                         console.log("SLES");
                         for (let i = 0; i < 25; i++) {
                                 for (let j = 1; j < 7; j++) {
@@ -311,6 +318,7 @@ export default function FullFretboard() {
         return (
                 <div>
                         <div className="big-full-fretboard-container">
+                                <div className="chord-name-title-div">{keyRoot + keyMajorOrMinor}</div>
                                 <h1 className="hidden-h1">View all of the notes and chords on the fretboard. Music theory applied to the guitar.</h1>
                                 <div className="big-full-fretboard-fret-numbers-div">
                                         <div className="fret-number-div-0fret"></div>
@@ -589,8 +597,8 @@ export default function FullFretboard() {
                                 <div className="ff-note-names-selection">
                                         <div className="ff-note-names-selection-title">Note Names:</div>
                                         <select value={noteNames} onChange={handleNoteNamesChange} className="below-ff-change-selectors">
-                                                <option value={true}>Yes</option>
-                                                <option value={false}>No</option>
+                                                <option value={"on"}>Yes</option>
+                                                <option value={"off"}>No</option>
                                         </select>
                                 </div>
                                 <div className="ff-submit-button" onClick={handleSubmit}>
