@@ -6,6 +6,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import SayWhat from "./components/SayWhat";
 import About from "./components/About";
 import FullFretboard from "./components/FullFretboard";
+import { HomePage } from "./components/HomePage.js";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
                 <div className="App">
                         <NavBar />
                         <Routes>
-                                <Route path="/" element={<FullFretboard />} />
+                                <Route path="/" element={<HomePage />} />
                                 <Route path="/PentatonicCharts" element={<PentatonicPage />} />
                                 <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
                                 <Route path="/AboutPentatonics" element={<SayWhat />} />

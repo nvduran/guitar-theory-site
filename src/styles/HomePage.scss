@@ -1,0 +1,142 @@
+@import "../variables/Variables.scss";
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #dedce2;
+    font-family: Arial, sans-serif;
+  
+    h1 {
+      font-size: 1.6rem;
+      color: #dddddd;
+      margin-bottom: 0rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-weight: lighter;
+      // background: linear-gradient(to right, rgba(211, 211, 211, 0.89) 0%, rgb(255, 255, 255));
+      // opacity: 40%;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
+
+    .home-charts-title {
+      font-size: 1rem;
+      color: #5c5c5c;
+      margin-top: 0rem;
+      margin-bottom: 6px;
+      border-bottom: $brand-purple 1px solid;
+      width: 12rem;
+
+      @media screen and (max-width: 800px) {
+        width: 12rem;
+        margin-top: 6rem;
+      }
+    }
+
+    .home-charts-title-2 {
+      font-size: 1rem;
+      color: #5c5c5c;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border-bottom: $brand-purple 1px solid;
+      width: 10rem;
+
+      @media screen and (max-width: 800px) {
+        width: 12rem;
+      }
+    }
+
+    .top-background-div {
+      // background: linear-gradient(to right, #2c3e50 20%, #223446);
+      background: linear-gradient(-45deg, #8D6ADB, #6A7FDB, $brand-purple, #6AB8DB);
+	  background-size: 400% 400%;
+	  animation: gradient 30s ease infinite;
+	  height: 10rem;
+    width: 38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    margin-bottom: 5rem;
+    margin-top: -5rem;
+    box-shadow: 2px 2px 20px 2px #aaa8ad;
+
+      @media screen and (max-width: 800px) {
+        border-radius: 0px;
+        width: 100%;
+        height: 14rem;
+
+        h1 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding-bottom: 4rem;
+      width: 40rem;
+  
+      .homepage-button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #6a88db 20%, #6A7FDB);
+      // background: linear-gradient(-45deg, #5e3169, #2f3585, #1d427a, #5e3169);
+      // background-size: 400% 400%;
+      // animation: gradient 15s ease infinite;
+      // height: 100vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        color: #dddddd;
+        font-size: 1.0rem;
+        border-radius: .3rem;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        box-shadow: 2px 2px 12px 2px #aaa8ad;
+  
+        &:hover {
+          transform: scale(1.05);
+          transition: all 0.2s ease-in-out;
+          color: #DBC66A;
+        }
+    
+      &:active {
+          transform: scale(0.95);
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      .button-container{
+        display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 18rem;
+      padding-bottom: 10rem;
+      }
+    }
+  }
+  

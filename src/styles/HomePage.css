@@ -1,0 +1,123 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #dedce2;
+  font-family: Arial, sans-serif;
+}
+.homepage h1 {
+  font-size: 1.6rem;
+  color: #dddddd;
+  margin-bottom: 0rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+}
+.homepage .home-charts-title {
+  font-size: 1rem;
+  color: #5c5c5c;
+  margin-top: 0rem;
+  margin-bottom: 6px;
+  border-bottom: #6A7FDB 1px solid;
+  width: 12rem;
+}
+@media screen and (max-width: 800px) {
+  .homepage .home-charts-title {
+    width: 12rem;
+    margin-top: 6rem;
+  }
+}
+.homepage .home-charts-title-2 {
+  font-size: 1rem;
+  color: #5c5c5c;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-bottom: #6A7FDB 1px solid;
+  width: 10rem;
+}
+@media screen and (max-width: 800px) {
+  .homepage .home-charts-title-2 {
+    width: 12rem;
+  }
+}
+.homepage .top-background-div {
+  background: linear-gradient(-45deg, #8D6ADB, #6A7FDB, #6A7FDB, #6AB8DB);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 10rem;
+  width: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  margin-bottom: 5rem;
+  margin-top: -5rem;
+  box-shadow: 2px 2px 20px 2px #aaa8ad;
+}
+@media screen and (max-width: 800px) {
+  .homepage .top-background-div {
+    border-radius: 0px;
+    width: 100%;
+    height: 14rem;
+  }
+  .homepage .top-background-div h1 {
+    font-size: 1.4rem;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.homepage .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 4rem;
+  width: 40rem;
+}
+.homepage .button-container .homepage-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #6a88db 20%, #6A7FDB);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: #dddddd;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 2px 2px 12px 2px #aaa8ad;
+}
+.homepage .button-container .homepage-button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  color: #DBC66A;
+}
+.homepage .button-container .homepage-button:active {
+  transform: scale(0.95);
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 800px) {
+  .homepage .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 18rem;
+    padding-bottom: 10rem;
+  }
+}/*# sourceMappingURL=HomePage.css.map */

@@ -572,7 +572,7 @@ export default function FullFretboard() {
 
                         <div className="ff-chord-type-selection-area">
                                 <div className="ff-key-selection">
-                                        <div className="ff-key-selection-title">Chord:</div>
+                                        <div className="ff-key-selection-title">Key:</div>
                                         <select value={keyRoot} onChange={handleRootChange} className="below-ff-change-selectors">
                                                 <option value="C">C</option>
                                                 <option value="C#">C#</option>
