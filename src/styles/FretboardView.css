@@ -6,22 +6,22 @@ body {
 .active-note-5th {
   background-color: #EF476F;
   height: 0.4rem;
-  line-height: 0.4rem;
+  line-height: 0.5rem;
   box-shadow: 0 0.2rem 0 0 #EF476F, 0 -0.2rem 0 0 #EF476F;
 }
 
 .active-note-3rd {
   background-color: #FFC43D;
   height: 0.4rem;
-  line-height: 0.4rem;
+  line-height: 0.5rem;
   box-shadow: 0 0.05rem 0 0 #FFC43D, 0 -0.05rem 0 0 #FFC43D;
 }
 
 .active-note {
   background-color: #1B9AAA;
   height: 0.4rem;
-  line-height: 0.4rem;
-  box-shadow: 0 0.35rem 0 0 #1B9AAA, 0 -0.35rem 0 0 #1B9AAA, 0 0.45rem 0 0 #1B9AAA, 0 -0.45rem 0 0 #1B9AAA;
+  line-height: 0.5rem;
+  box-shadow: 0 0.35rem 0 0 #1B9AAA, 0 -0.35rem 0 0 #1B9AAA, 0 0.5rem 0 0 #1B9AAA, 0 -0.5rem 0 0 #1B9AAA;
 }
 
 .pentatonic-note {
@@ -97,7 +97,7 @@ body {
 }
 
 .submit-button:hover {
-  color: #6A7FDB;
+  color: #1B9AAA;
 }
 
 .chord-picker-sel {

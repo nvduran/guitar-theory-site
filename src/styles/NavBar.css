@@ -7,7 +7,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #6A7FDB;
+  color: #1B9AAA;
 }
 
 .nav-link {
@@ -15,7 +15,7 @@ nav {
 }
 
 .navbar-brand:hover {
-  color: #6A7FDB;
+  color: #1B9AAA;
 }
 
 .nav-guitar-div {
@@ -31,7 +31,7 @@ nav {
 
 .nav-theory-div::after {
   content: ".com";
-  color: #6A7FDB;
+  color: #1B9AAA;
 }
 
 .nav-bs-container {

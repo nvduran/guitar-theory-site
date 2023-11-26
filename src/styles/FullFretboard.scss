@@ -2,15 +2,18 @@
 
 .big-full-fretboard-container {
     margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     overflow-x: scroll;
     overflow-y: hidden;
+    padding-bottom: 0px;
+    max-width: 98vw;
 }
 
 .big-full-fretboard-div {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 0px;
 }
 
 .ff-fret0 {
@@ -276,7 +279,7 @@
     font-size: 0px;
     height: 0.4rem;
     line-height: 0.4rem;
-    box-shadow: 0 0.35rem 0 0 #1B9AAA,0 -.35rem 0 0 #1B9AAA, 0 0.45rem 0 0 #1B9AAA,0 -.45rem 0 0 #1B9AAA;
+    box-shadow: 0 0.35rem 0 0 #1B9AAA,0 -.35rem 0 0 #1B9AAA, 0 0.5rem 0 0 #1B9AAA,0 -.5rem 0 0 #1B9AAA;
 }
 
 .highlighted-note-third {
@@ -313,7 +316,7 @@
     background-color: rgb(221, 221, 221);
     font-size: small;
     height: 0.4rem;
-    line-height: 0.4rem;
+    line-height: 0.5rem;
 }
 
 .regular-note-div-no-note-name {
@@ -327,6 +330,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .fret-number-div {    
