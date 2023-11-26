@@ -315,7 +315,7 @@
   height: 0.4rem;
   line-height: 0.4rem;
   font-size: 0px;
-  box-shadow: 0 0.05rem 0 0 #FFC43D, 0 -0.05rem 0 0 #FFC43D;
+  box-shadow: 0 0.02rem 0 0 #FFC43D, 0 -0.02rem 0 0 #FFC43D;
 }
 
 .highlighted-note-fifth {
@@ -330,7 +330,7 @@
   height: 0.4rem;
   line-height: 0.4rem;
   font-size: 0px;
-  box-shadow: 0 0.2rem 0 0 #EF476F, 0 -0.2rem 0 0 #EF476F;
+  box-shadow: 0 0.25rem 0 0 #EF476F, 0 -0.25rem 0 0 #EF476F;
 }
 
 .regular-note-div {
