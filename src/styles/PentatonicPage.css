@@ -1,7 +1,7 @@
 .add-fretboard-button {
   cursor: pointer;
-  background-color: #e6e6e6;
-  color: #848484;
+  background-color: #dddddd;
+  color: #5c5c5c;
   justify-content: center;
   width: 10rem;
   height: 2rem;
@@ -14,8 +14,8 @@
 
 .remove-fretboard-button {
   cursor: pointer;
-  background-color: #e6e6e6;
-  color: #848484;
+  background-color: #dddddd;
+  color: #5c5c5c;
   width: 5rem;
   height: 2rem;
   border-radius: 0.2rem;
@@ -79,7 +79,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #e6e6e6;
+  background-color: #dddddd;
   min-height: 2rem;
   align-items: center;
   border-radius: 3px;
@@ -89,7 +89,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #6A7FDB;
+  background-color: #1B9AAA;
   font-size: x-small;
   width: 4rem;
   height: 1rem;
@@ -99,7 +99,7 @@ button {
 }
 
 .active-note-5th-key-example {
-  background: repeating-linear-gradient(45deg, rgba(106, 127, 219, 0.6235294118), rgba(106, 127, 219, 0.6235294118) 5px, rgba(106, 127, 219, 0.7176470588) 5px, rgba(106, 127, 219, 0.7176470588) 10px);
+  background-color: #EF476F;
   font-size: x-small;
   width: 4rem;
   height: 1rem;
@@ -109,8 +109,7 @@ button {
 }
 
 .active-note-3rd-key-example {
-  background: rgba(106, 127, 219, 0.2745098039);
-  background: radial-gradient(circle, #e6e6e6, 10%, rgba(106, 127, 219, 0.2745098039) 40%);
+  background-color: #FFC43D;
   font-size: x-small;
   width: 4rem;
   height: 1rem;

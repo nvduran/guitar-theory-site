@@ -15,11 +15,11 @@ function App() {
                         <NavBar />
                         <Routes>
                                 <Route path="/" element={<HomePage />} />
-                                <Route path="/PentatonicCharts" element={<PentatonicPage />} />
+                                {/* <Route path="/PentatonicCharts" element={<PentatonicPage />} />
                                 <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
                                 <Route path="/AboutPentatonics" element={<SayWhat />} />
                                 <Route path="/About" element={<About />} />
-                                <Route path="/FullFretboard" element={<FullFretboard />} />
+                                <Route path="/FullFretboard" element={<FullFretboard />} /> */}
                         </Routes>
                         <div></div>
                 </div>
