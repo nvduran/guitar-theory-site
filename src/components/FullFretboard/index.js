@@ -227,7 +227,7 @@ export default function FullFretboard() {
         };
 
         const handleSubmit = (e) => {
-                changeNoteHighlighting();
+                changeNoteHighlighting(); // This should be here
                 submitActivityLog("submit", "user", "full fretboard");
         };
 
@@ -245,7 +245,6 @@ export default function FullFretboard() {
                 if (e.target.value === "off") {
                         setNoteNames("off");
                 }
-                changeNoteHighlighting();
         };
 
         const submitActivityLog = (action, user, details) => {
